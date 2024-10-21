@@ -82,8 +82,8 @@ import (
 	"runtime"
 	"sync"
 
-	"golang.org/x/tools/internal/typeparams"
-	"golang.org/x/tools/internal/versions"
+	"golang.custom.org/x/tools/core/typeparams"
+	"golang.custom.org/x/tools/core/versions"
 )
 
 type opaqueType struct{ name string }

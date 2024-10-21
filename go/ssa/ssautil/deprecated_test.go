@@ -12,10 +12,10 @@ import (
 	"os"
 	"testing"
 
+	"golang.custom.org/x/tools/core/testenv"
 	"golang.org/x/tools/go/loader"
 	"golang.org/x/tools/go/ssa"
 	"golang.org/x/tools/go/ssa/ssautil"
-	"golang.org/x/tools/internal/testenv"
 )
 
 // TestCreateProgram tests CreateProgram which has an x/tools/go/loader.Program.

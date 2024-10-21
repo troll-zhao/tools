@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 	"testing"
 
+	"golang.custom.org/x/tools/core/testenv"
 	"golang.org/x/tools/go/packages"
 	"golang.org/x/tools/go/ssa/ssautil"
-	"golang.org/x/tools/internal/testenv"
 )
 
 func TestDominatorOrder(t *testing.T) {

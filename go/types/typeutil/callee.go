@@ -8,7 +8,7 @@ import (
 	"go/ast"
 	"go/types"
 
-	"golang.org/x/tools/internal/typeparams"
+	"golang.custom.org/x/tools/core/typeparams"
 )
 
 // Callee returns the named target of a function call, if any:

@@ -14,8 +14,8 @@ import (
 	"go/types"
 	"os"
 
+	"golang.custom.org/x/tools/core/analysisinternal"
 	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/internal/analysisinternal"
 )
 
 // Format returns a string representation of the expression.

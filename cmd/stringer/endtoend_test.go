@@ -22,7 +22,7 @@ import (
 	"sync"
 	"testing"
 
-	"golang.org/x/tools/internal/testenv"
+	"golang.custom.org/x/tools/core/testenv"
 )
 
 // This file contains a test that compiles and runs each program in testdata

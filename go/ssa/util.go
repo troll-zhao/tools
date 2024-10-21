@@ -15,9 +15,9 @@ import (
 	"os"
 	"sync"
 
+	"golang.custom.org/x/tools/core/typeparams"
+	"golang.custom.org/x/tools/core/typesinternal"
 	"golang.org/x/tools/go/types/typeutil"
-	"golang.org/x/tools/internal/typeparams"
-	"golang.org/x/tools/internal/typesinternal"
 )
 
 type unit struct{}

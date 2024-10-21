@@ -8,10 +8,10 @@ import (
 	"path/filepath"
 	"testing"
 
+	"golang.custom.org/x/tools/core/testenv"
+	"golang.custom.org/x/tools/core/testfiles"
 	"golang.org/x/tools/go/analysis/analysistest"
 	"golang.org/x/tools/go/analysis/passes/copylock"
-	"golang.org/x/tools/internal/testenv"
-	"golang.org/x/tools/internal/testfiles"
 )
 
 func Test(t *testing.T) {

@@ -790,7 +790,7 @@ func (imp *importer) doImport(from *PackageInfo, to string) (*types.Package, err
 	ii := imp.imported[path]
 	imp.importedMu.Unlock()
 	if ii == nil {
-		panic("internal error: unexpected import: " + path)
+		panic("core error: unexpected import: " + path)
 	}
 	if ii.info != nil {
 		return ii.info.Pkg, nil
@@ -811,7 +811,7 @@ func (imp *importer) doImport(from *PackageInfo, to string) (*types.Package, err
 		return nil, fmt.Errorf("import cycle: %s", strings.Join(cycle, " -> "))
 	}
 
-	panic("internal error: import of incomplete (yet acyclic) package: " + fromPath)
+	panic("core error: import of incomplete (yet acyclic) package: " + fromPath)
 }
 
 // findPackage locates the package denoted by the importPath in the

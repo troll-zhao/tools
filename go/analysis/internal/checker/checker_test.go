@@ -13,13 +13,13 @@ import (
 	"strings"
 	"testing"
 
+	"golang.custom.org/x/tools/core/testenv"
+	"golang.custom.org/x/tools/core/testfiles"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/analysistest"
 	"golang.org/x/tools/go/analysis/internal/checker"
 	"golang.org/x/tools/go/analysis/passes/inspect"
 	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/internal/testenv"
-	"golang.org/x/tools/internal/testfiles"
 	"golang.org/x/tools/txtar"
 )
 
@@ -234,7 +234,7 @@ type EmptyFact struct{}
 func (f *EmptyFact) AFact() {}
 
 func TestURL(t *testing.T) {
-	// TestURL test that URLs get forwarded to diagnostics by internal/checker.
+	// TestURL test that URLs get forwarded to diagnostics by core/checker.
 	testenv.NeedsGoPackages(t)
 
 	files := map[string]string{

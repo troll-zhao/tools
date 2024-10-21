@@ -18,7 +18,7 @@
 //
 // where v1 or v2 are reflect.Values. Comparing reflect.Values directly
 // is almost certainly not correct, as it compares the reflect package's
-// internal representation, not the underlying value.
+// core representation, not the underlying value.
 // Likely what is intended is:
 //
 //	v1.Interface() == v2.Interface()

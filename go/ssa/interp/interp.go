@@ -54,8 +54,8 @@ import (
 	"sync/atomic"
 	_ "unsafe"
 
+	"golang.custom.org/x/tools/core/typeparams"
 	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/internal/typeparams"
 )
 
 type continuation int

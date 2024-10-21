@@ -63,9 +63,9 @@ With no flags, the command prints the name and location of each dead
 function in the form of a typical compiler diagnostic, for example:
 
 	$ deadcode -f='{{range .Funcs}}{{println .Position}}{{end}}' -test ./gopls/...
-	gopls/internal/protocol/command.go:1206:6: unreachable func: openClientEditor
-	gopls/internal/template/parse.go:414:18: unreachable func: Parsed.WriteNode
-	gopls/internal/template/parse.go:419:18: unreachable func: wrNode.writeNode
+	gopls/core/protocol/command.go:1206:6: unreachable func: openClientEditor
+	gopls/core/template/parse.go:414:18: unreachable func: Parsed.WriteNode
+	gopls/core/template/parse.go:419:18: unreachable func: wrNode.writeNode
 
 With the -json flag, the command prints an array of Package
 objects, as defined by the JSON schema (see below).
@@ -75,10 +75,10 @@ on each Package record. So, this template shows dead functions grouped
 by package:
 
 	$ deadcode -f='{{println .Path}}{{range .Funcs}}{{printf "\t%s\n" .Name}}{{end}}{{println}}' -test ./gopls/...
-	golang.org/x/tools/gopls/internal/lsp
+	golang.custom.org/x/tools/gopls/core/lsp
 		openClientEditor
 
-	golang.org/x/tools/gopls/internal/template
+	golang.custom.org/x/tools/gopls/core/template
 		Parsed.WriteNode
 		wrNode.writeNode
 
@@ -106,7 +106,7 @@ is static or dynamic, and its source line number. For example:
 	static@L0262 --> golang.org/x/tools/go/packages.defaultDriver
 	static@L0305 --> golang.org/x/tools/go/packages.goListDriver
 	static@L0153 --> golang.org/x/tools/go/packages.goListDriver$1
-	static@L0154 --> golang.org/x/tools/go/internal/packagesdriver.GetSizesForArgsGolist
+	static@L0154 --> golang.org/x/tools/go/core/packagesdriver.GetSizesForArgsGolist
 	static@L0044 --> bytes.Buffer.String
 
 # JSON schema

@@ -4,16 +4,16 @@
 
 // The generate command updates the following files of documentation:
 //
-//	gopls/doc/settings.md   -- from linking gopls/internal/settings.DefaultOptions
-//	gopls/doc/analyzers.md  -- from linking gopls/internal/settings.DefaultAnalyzers
-//	gopls/doc/inlayHints.md -- from loading gopls/internal/settings.InlayHint
-//	gopls/internal/doc/api.json -- all of the above in a single value, for 'gopls api-json'
+//	gopls/doc/settings.md   -- from linking gopls/core/settings.DefaultOptions
+//	gopls/doc/analyzers.md  -- from linking gopls/core/settings.DefaultAnalyzers
+//	gopls/doc/inlayHints.md -- from loading gopls/core/settings.InlayHint
+//	gopls/core/doc/api.json -- all of the above in a single value, for 'gopls api-json'
 //
 // Run it with this command:
 //
-//	$ cd gopls/internal/doc && go generate
+//	$ cd gopls/core/doc && go generate
 //
-// TODO(adonovan): move this package to gopls/internal/doc/generate.
+// TODO(adonovan): move this package to gopls/core/doc/generate.
 package main
 
 import (
@@ -36,14 +36,14 @@ import (
 	"time"
 	"unicode"
 
+	"golang.custom.org/x/tools/gopls/core/cache"
+	"golang.custom.org/x/tools/gopls/core/doc"
+	"golang.custom.org/x/tools/gopls/core/golang"
+	"golang.custom.org/x/tools/gopls/core/mod"
+	"golang.custom.org/x/tools/gopls/core/settings"
+	"golang.custom.org/x/tools/gopls/core/util/safetoken"
 	"golang.org/x/tools/go/ast/astutil"
 	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/doc"
-	"golang.org/x/tools/gopls/internal/golang"
-	"golang.org/x/tools/gopls/internal/mod"
-	"golang.org/x/tools/gopls/internal/settings"
-	"golang.org/x/tools/gopls/internal/util/safetoken"
 )
 
 func main() {
@@ -76,7 +76,7 @@ func doMain(write bool) (bool, error) {
 		name    string // relative to gopls
 		rewrite rewriter
 	}{
-		{"internal/doc/api.json", rewriteAPI},
+		{"core/doc/api.json", rewriteAPI},
 		{"doc/settings.md", rewriteSettings},
 		{"doc/codelenses.md", rewriteCodeLenses},
 		{"doc/analyzers.md", rewriteAnalyzers},
@@ -127,7 +127,7 @@ func loadAPI() (*doc.API, error) {
 		&packages.Config{
 			Mode: packages.NeedTypes | packages.NeedTypesInfo | packages.NeedSyntax | packages.NeedDeps,
 		},
-		"golang.org/x/tools/gopls/internal/settings",
+		"golang.custom.org/x/tools/gopls/core/settings",
 	)
 	if err != nil {
 		return nil, err
@@ -185,7 +185,7 @@ func loadAPI() (*doc.API, error) {
 }
 
 // loadOptions computes a single category of settings by a combination
-// of static analysis and reflection over gopls internal types.
+// of static analysis and reflection over gopls core types.
 func loadOptions(category reflect.Value, optsType types.Object, pkg *packages.Package, hierarchy string) ([]*doc.Option, error) {
 	file, err := fileForPos(pkg, optsType.Pos())
 	if err != nil {
@@ -248,7 +248,7 @@ func loadOptions(category reflect.Value, optsType types.Object, pkg *packages.Pa
 		// map keys.
 		//
 		// Notable edge cases:
-		// - any (e.g. in linksInHover) is really a sum of false | true | "internal".
+		// - any (e.g. in linksInHover) is really a sum of false | true | "core".
 		// - time.Duration is really a string with a particular syntax.
 		typ := typesField.Type().String()
 		if _, ok := enums[typesField.Type()]; ok {
@@ -327,7 +327,7 @@ func loadEnums(pkg *packages.Package) (map[types.Type][]doc.EnumValue, error) {
 	enums[pkg.Types.Scope().Lookup("LinksInHoverEnum").Type()] = []doc.EnumValue{
 		{Value: "false", Doc: "false: do not show links"},
 		{Value: "true", Doc: "true: show links to the `linkTarget` domain"},
-		{Value: `"gopls"`, Doc: "`\"gopls\"`: show links to gopls' internal documentation viewer"},
+		{Value: `"gopls"`, Doc: "`\"gopls\"`: show links to gopls' core documentation viewer"},
 	}
 
 	return enums, nil

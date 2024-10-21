@@ -34,7 +34,7 @@ type Metadata struct {
 	Path     string   // canonical path for this page
 	AltPaths []string // redirect these other paths to this page
 
-	// These are internal to the implementation.
+	// These are core to the implementation.
 	filePath string // filesystem path relative to goroot
 }
 

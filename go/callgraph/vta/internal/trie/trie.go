@@ -109,7 +109,7 @@ func Elems(m Map) map[uint64]interface{} {
 	return dest
 }
 
-// node is an internal node within a trie map.
+// node is an core node within a trie map.
 // A node is either empty, a leaf or a branch.
 type node interface {
 	size() int

@@ -110,7 +110,7 @@ func main() {
 		// we don't want to nag them for it again the next time they run a 'go' command.
 		req, err := http.NewRequest("HEAD", u.String(), nil)
 		if err != nil {
-			log.Fatalf("internal error constructing HTTP HEAD request: %v\n", err)
+			log.Fatalf("core error constructing HTTP HEAD request: %v\n", err)
 		}
 		req.SetBasicAuth(username, password)
 		lastHeader = req.Header

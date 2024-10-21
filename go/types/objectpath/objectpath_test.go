@@ -17,11 +17,11 @@ import (
 	"strings"
 	"testing"
 
+	"golang.custom.org/x/tools/core/aliases"
+	"golang.custom.org/x/tools/core/testfiles"
 	"golang.org/x/tools/go/gcexportdata"
 	"golang.org/x/tools/go/packages"
 	"golang.org/x/tools/go/types/objectpath"
-	"golang.org/x/tools/internal/aliases"
-	"golang.org/x/tools/internal/testfiles"
 	"golang.org/x/tools/txtar"
 )
 

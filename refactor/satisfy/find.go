@@ -43,8 +43,8 @@ import (
 	"go/token"
 	"go/types"
 
+	"golang.custom.org/x/tools/core/typeparams"
 	"golang.org/x/tools/go/types/typeutil"
-	"golang.org/x/tools/internal/typeparams"
 )
 
 // A Constraint records the fact that the RHS type does and must

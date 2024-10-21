@@ -27,12 +27,12 @@ import (
 	"sync"
 	"time"
 
+	"golang.custom.org/x/tools/core/analysisinternal"
+	"golang.custom.org/x/tools/core/diff"
+	"golang.custom.org/x/tools/core/robustio"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/internal/analysisflags"
 	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/internal/analysisinternal"
-	"golang.org/x/tools/internal/diff"
-	"golang.org/x/tools/internal/robustio"
 )
 
 var (
@@ -760,7 +760,7 @@ func (act *action) execOnce() {
 		if err == nil {
 			if got, want := reflect.TypeOf(act.result), pass.Analyzer.ResultType; got != want {
 				err = fmt.Errorf(
-					"internal error: on package %s, analyzer %s returned a result of type %v, but declared ResultType %v",
+					"core error: on package %s, analyzer %s returned a result of type %v, but declared ResultType %v",
 					pass.Pkg.Path(), pass.Analyzer, got, want)
 			}
 		}
@@ -802,7 +802,7 @@ func inheritFacts(act, dep *action) {
 		if serialize {
 			encodedFact, err := codeFact(fact)
 			if err != nil {
-				log.Panicf("internal error: encoding of %T fact failed in %v: %v", fact, act, err)
+				log.Panicf("core error: encoding of %T fact failed in %v: %v", fact, act, err)
 			}
 			fact = encodedFact
 		}
@@ -824,7 +824,7 @@ func inheritFacts(act, dep *action) {
 		if serialize {
 			encodedFact, err := codeFact(fact)
 			if err != nil {
-				log.Panicf("internal error: encoding of %T fact failed in %v", fact, act)
+				log.Panicf("core error: encoding of %T fact failed in %v", fact, act)
 			}
 			fact = encodedFact
 		}
@@ -913,7 +913,7 @@ func (act *action) exportObjectFact(obj types.Object, fact analysis.Fact) {
 	}
 
 	if obj.Pkg() != act.pkg.Types {
-		log.Panicf("internal error: in analysis %s of package %s: Fact.Set(%s, %T): can't set facts on objects belonging another package",
+		log.Panicf("core error: in analysis %s of package %s: Fact.Set(%s, %T): can't set facts on objects belonging another package",
 			act.a, act.pkg, obj, fact)
 	}
 

@@ -33,7 +33,7 @@
 //   - (De)references of nested pointers to interfaces are modeled
 //     as a unique nestedPtrInterface node in the type propagation graph.
 //   - Each function literal is represented as a function node whose
-//     internal value is the (SSA) representation of the function. This
+//     core value is the (SSA) representation of the function. This
 //     is done to precisely infer flow of higher-order functions.
 //
 // Edges in the graph represent flow of types (and function literals) through

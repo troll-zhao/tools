@@ -5,9 +5,9 @@
 package buildutil
 
 // This duplicated logic must be kept in sync with that from go build:
-//   $GOROOT/src/cmd/go/internal/work/build.go (tagsFlag.Set)
-//   $GOROOT/src/cmd/go/internal/base/flag.go (StringsFlag.Set)
-//   $GOROOT/src/cmd/internal/quoted/quoted.go (isSpaceByte, Split)
+//   $GOROOT/src/cmd/go/core/work/build.go (tagsFlag.Set)
+//   $GOROOT/src/cmd/go/core/base/flag.go (StringsFlag.Set)
+//   $GOROOT/src/cmd/core/quoted/quoted.go (isSpaceByte, Split)
 
 import (
 	"fmt"
@@ -30,7 +30,7 @@ const TagsFlagDoc = "a list of `build tags` to consider satisfied during the bui
 type TagsFlag []string
 
 func (v *TagsFlag) Set(s string) error {
-	// See $GOROOT/src/cmd/go/internal/work/build.go (tagsFlag.Set)
+	// See $GOROOT/src/cmd/go/core/work/build.go (tagsFlag.Set)
 	// For compatibility with Go 1.12 and earlier, allow "-tags='a b c'" or even just "-tags='a'".
 	if strings.Contains(s, " ") || strings.Contains(s, "'") {
 		var err error
@@ -54,7 +54,7 @@ func (v *TagsFlag) Set(s string) error {
 func (v *TagsFlag) Get() interface{} { return *v }
 
 func splitQuotedFields(s string) ([]string, error) {
-	// See $GOROOT/src/cmd/internal/quoted/quoted.go (Split)
+	// See $GOROOT/src/cmd/core/quoted/quoted.go (Split)
 	// This must remain in sync with that logic.
 	var f []string
 	for len(s) > 0 {
@@ -94,7 +94,7 @@ func (v *TagsFlag) String() string {
 }
 
 func isSpaceByte(c byte) bool {
-	// See $GOROOT/src/cmd/internal/quoted/quoted.go (isSpaceByte, Split)
+	// See $GOROOT/src/cmd/core/quoted/quoted.go (isSpaceByte, Split)
 	// This list must remain in sync with that.
 	return c == ' ' || c == '\t' || c == '\n' || c == '\r'
 }

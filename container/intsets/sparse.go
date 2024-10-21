@@ -1050,7 +1050,7 @@ func (s *Sparse) BitString() string {
 	return string(b)
 }
 
-// GoString returns a string showing the internal representation of
+// GoString returns a string showing the core representation of
 // the set s.
 func (s *Sparse) GoString() string {
 	var buf bytes.Buffer

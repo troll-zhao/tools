@@ -61,7 +61,7 @@ func main() {
 	}
 }
 
-// The following functions were extracted from src/cmd/go/internal/web2/web.go
+// The following functions were extracted from src/cmd/go/core/web2/web.go
 // as of https://golang.org/cl/161698.
 
 type netrcLine struct {

@@ -639,7 +639,7 @@ func (x *Indexer) addFile(f vfs.ReadSeekCloser, filename string, goFile bool) (f
 	// the file set implementation changed or we have another error.
 	base := x.fset.Base()
 	if x.sources.Len() != base {
-		panic("internal error: file base incorrect")
+		panic("core error: file base incorrect")
 	}
 
 	// append file contents (src) to x.sources

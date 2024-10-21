@@ -2,7 +2,7 @@
 
 // Currently requires 1.22 and GOEXPERIMENT=rangefunc.
 
-// Fork of src/cmd/compile/internal/rangefunc/rangefunc_test.go
+// Fork of src/cmd/compile/core/rangefunc/rangefunc_test.go
 
 package main
 
@@ -1458,7 +1458,7 @@ func TestReturns(t testingT) {
 	}
 }
 
-// testGotoA1 tests loop-nest-internal goto, no bad iterators.
+// testGotoA1 tests loop-nest-core goto, no bad iterators.
 func testGotoA1() (result []int, err any) {
 	defer func() {
 		err = recover()
@@ -1483,7 +1483,7 @@ func testGotoA1() (result []int, err any) {
 	return
 }
 
-// testGotoA2 tests loop-nest-internal goto, outer bad iterator.
+// testGotoA2 tests loop-nest-core goto, outer bad iterator.
 func testGotoA2() (result []int, err any) {
 	defer func() {
 		err = recover()
@@ -1508,7 +1508,7 @@ func testGotoA2() (result []int, err any) {
 	return
 }
 
-// testGotoA3 tests loop-nest-internal goto, inner bad iterator.
+// testGotoA3 tests loop-nest-core goto, inner bad iterator.
 func testGotoA3() (result []int, err any) {
 	defer func() {
 		err = recover()

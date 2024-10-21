@@ -24,13 +24,13 @@ import (
 	"strings"
 	"text/template"
 
+	"golang.custom.org/x/tools/core/typesinternal"
 	"golang.org/x/telemetry"
 	"golang.org/x/tools/go/callgraph"
 	"golang.org/x/tools/go/callgraph/rta"
 	"golang.org/x/tools/go/packages"
 	"golang.org/x/tools/go/ssa"
 	"golang.org/x/tools/go/ssa/ssautil"
-	"golang.org/x/tools/internal/typesinternal"
 )
 
 //go:embed doc.go
@@ -394,7 +394,7 @@ func printObjects(format string, objects []any) {
 	if *jsonFlag {
 		out, err := json.MarshalIndent(objects, "", "\t")
 		if err != nil {
-			log.Fatalf("internal error: %v", err)
+			log.Fatalf("core error: %v", err)
 		}
 		os.Stdout.Write(out)
 		return

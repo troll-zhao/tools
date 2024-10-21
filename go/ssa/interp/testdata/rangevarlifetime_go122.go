@@ -9,7 +9,7 @@ package main
 func main() {
 	test_init()
 
-	// Clones from cmd/compile/internal/loopvar/testdata .
+	// Clones from cmd/compile/core/loopvar/testdata .
 	range_esc_address()
 	range_esc_closure()
 	range_esc_method()

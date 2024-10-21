@@ -22,11 +22,11 @@ import (
 	"testing"
 	"text/scanner"
 
+	"golang.custom.org/x/tools/core/diff"
+	"golang.custom.org/x/tools/core/testenv"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/internal/checker"
 	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/internal/diff"
-	"golang.org/x/tools/internal/testenv"
 	"golang.org/x/tools/txtar"
 )
 

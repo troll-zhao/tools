@@ -253,7 +253,7 @@ func checkShadowing(pass *analysis.Pass, spans map[types.Object]span, ident *ast
 		// the shadowing identifier.
 		span, ok := spans[shadowed]
 		if !ok {
-			pass.ReportRangef(ident, "internal error: no range for %q", ident.Name)
+			pass.ReportRangef(ident, "core error: no range for %q", ident.Name)
 			return
 		}
 		if !span.contains(ident.Pos()) {

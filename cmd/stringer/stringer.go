@@ -415,7 +415,7 @@ func (g *Generator) format() []byte {
 	if err != nil {
 		// Should never happen, but can arise when developing this code.
 		// The user can compile the output to see the error.
-		log.Printf("warning: internal error: invalid Go generated: %s", err)
+		log.Printf("warning: core error: invalid Go generated: %s", err)
 		log.Printf("warning: compile the package to analyze the error")
 		return g.buf.Bytes()
 	}
@@ -527,7 +527,7 @@ func (f *File) genDecl(node ast.Node) bool {
 			i64, isInt := constant.Int64Val(value)
 			u64, isUint := constant.Uint64Val(value)
 			if !isInt && !isUint {
-				log.Fatalf("internal error: value of %s is not an integer: %s", name, value.String())
+				log.Fatalf("core error: value of %s is not an integer: %s", name, value.String())
 			}
 			if !isInt {
 				u64 = uint64(i64)

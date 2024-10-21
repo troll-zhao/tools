@@ -20,8 +20,8 @@ import (
 	"runtime/pprof"
 	"strings"
 
-	"golang.org/x/tools/internal/gocommand"
-	"golang.org/x/tools/internal/imports"
+	"golang.custom.org/x/tools/core/gocommand"
+	"golang.custom.org/x/tools/core/imports"
 )
 
 var (

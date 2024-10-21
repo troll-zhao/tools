@@ -19,10 +19,10 @@ import (
 	"sort"
 	"strings"
 
+	"golang.custom.org/x/tools/core/drivertest"
+	"golang.custom.org/x/tools/core/tool"
 	"golang.org/x/tools/go/packages"
 	"golang.org/x/tools/go/types/typeutil"
-	"golang.org/x/tools/internal/drivertest"
-	"golang.org/x/tools/internal/tool"
 )
 
 func main() {

@@ -8,11 +8,11 @@ import (
 	_ "embed"
 	"reflect"
 
+	"golang.custom.org/x/tools/core/typeparams/genericfeatures"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/inspect"
 	"golang.org/x/tools/go/analysis/passes/internal/analysisutil"
 	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/internal/typeparams/genericfeatures"
 )
 
 //go:embed doc.go

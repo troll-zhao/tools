@@ -15,10 +15,10 @@ import (
 	"context"
 	"os"
 
+	"golang.custom.org/x/tools/core/tool"
+	"golang.custom.org/x/tools/gopls/core/cmd"
+	versionpkg "golang.custom.org/x/tools/gopls/core/version"
 	"golang.org/x/telemetry"
-	"golang.org/x/tools/gopls/internal/cmd"
-	versionpkg "golang.org/x/tools/gopls/internal/version"
-	"golang.org/x/tools/internal/tool"
 )
 
 var version = "" // if set by the linker, overrides the gopls version

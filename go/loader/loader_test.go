@@ -23,9 +23,9 @@ import (
 	"sync"
 	"testing"
 
+	"golang.custom.org/x/tools/core/testenv"
 	"golang.org/x/tools/go/buildutil"
 	"golang.org/x/tools/go/loader"
-	"golang.org/x/tools/internal/testenv"
 )
 
 func TestMain(m *testing.M) {

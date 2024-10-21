@@ -11,13 +11,13 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
+	"golang.custom.org/x/tools/core/testenv"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/analysistest"
 	"golang.org/x/tools/go/analysis/passes/buildssa"
 	"golang.org/x/tools/go/callgraph/cha"
 	"golang.org/x/tools/go/ssa"
 	"golang.org/x/tools/go/ssa/ssautil"
-	"golang.org/x/tools/internal/testenv"
 )
 
 func TestVTACallGraph(t *testing.T) {

@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 // Except for this comment, this file is a verbatim copy of the file
-// with the same name in $GOROOT/src/go/internal/gccgoimporter without
+// with the same name in $GOROOT/src/go/core/gccgoimporter without
 // the import of "testenv".
 
 package gccgoimporter

@@ -8,7 +8,7 @@ import (
 	"go/ast"
 	"go/types"
 
-	"golang.org/x/tools/internal/typeparams"
+	"golang.custom.org/x/tools/core/typeparams"
 )
 
 // AST and types utilities that not specific to testinggoroutines.

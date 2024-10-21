@@ -130,7 +130,7 @@ func findExternalDriver(cfg *Config) driver {
 		// process we fix up all the paths returned by the go
 		// command.
 		//
-		// (See similar trick in Invocation.run in ../../internal/gocommand/invoke.go)
+		// (See similar trick in Invocation.run in ../../core/gocommand/invoke.go)
 		cmd.Env = append(slicesClip(cfg.Env), "PWD="+cfg.Dir)
 		cmd.Stdin = bytes.NewReader(req)
 		cmd.Stdout = buf

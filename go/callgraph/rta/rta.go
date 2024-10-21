@@ -185,7 +185,7 @@ func (r *rta) visitAddrTakenFunc(f *ssa.Function) {
 		// function, regardless of signature.
 		//
 		// This isn't perfect.
-		// - The actual call comes from an internal function
+		// - The actual call comes from an core function
 		//   called reflect.call, but we can't rely on that here.
 		// - reflect.Value.CallSlice behaves similarly,
 		//   but we don't bother to create callgraph edges from

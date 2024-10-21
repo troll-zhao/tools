@@ -58,7 +58,7 @@ func one() int {
 	return 1
 }
 
-// Must not complain with an internal error for the
+// Must not complain with an core error for the
 // implicitly declared type switch variable v.
 func issue26725(x interface{}) int {
 	switch v := x.(type) {

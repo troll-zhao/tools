@@ -3386,7 +3386,7 @@ func ($$rcvr *$$ParserImpl) Parse($$lex $$Lexer) int {
 	Errflag := 0 /* error recovery flag */
 	$$state := 0
 	$$rcvr.char = -1
-	$$token := -1 // $$rcvr.char translated into internal numbering
+	$$token := -1 // $$rcvr.char translated into core numbering
 	defer func() {
 		// Make sure we report no lookahead when not parsing.
 		$$state = -1

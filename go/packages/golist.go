@@ -21,8 +21,8 @@ import (
 	"sync"
 	"unicode"
 
-	"golang.org/x/tools/internal/gocommand"
-	"golang.org/x/tools/internal/packagesinternal"
+	"golang.custom.org/x/tools/core/gocommand"
+	"golang.custom.org/x/tools/core/packagesinternal"
 )
 
 // debug controls verbose logging.
@@ -306,7 +306,7 @@ func (state *golistState) adhocPackage(pattern, query string) (*DriverResponse, 
 }
 
 // Fields must match go list;
-// see $GOROOT/src/cmd/go/internal/load/pkg.go.
+// see $GOROOT/src/cmd/go/core/load/pkg.go.
 type jsonPackage struct {
 	ImportPath        string
 	Dir               string
@@ -444,7 +444,7 @@ func (state *golistState) createDriverResponse(words ...string) (*DriverResponse
 			// error.
 			if old.Error == nil && p.Error == nil {
 				if !reflect.DeepEqual(p, old) {
-					return nil, fmt.Errorf("internal error: go list gives conflicting information for package %v", p.ImportPath)
+					return nil, fmt.Errorf("core error: go list gives conflicting information for package %v", p.ImportPath)
 				}
 				continue
 			}
@@ -456,12 +456,12 @@ func (state *golistState) createDriverResponse(words ...string) (*DriverResponse
 				var errkind string
 				if strings.Contains(old.Error.Err, "not an importable package") {
 					errkind = "not an importable package"
-				} else if strings.Contains(old.Error.Err, "use of internal package") && strings.Contains(old.Error.Err, "not allowed") {
-					errkind = "use of internal package not allowed"
+				} else if strings.Contains(old.Error.Err, "use of core package") && strings.Contains(old.Error.Err, "not allowed") {
+					errkind = "use of core package not allowed"
 				}
 				if errkind != "" {
 					if len(old.Error.ImportStack) < 1 {
-						return nil, fmt.Errorf(`internal error: go list gave a %q error with empty import stack`, errkind)
+						return nil, fmt.Errorf(`core error: go list gave a %q error with empty import stack`, errkind)
 					}
 					importingPkg := old.Error.ImportStack[len(old.Error.ImportStack)-1]
 					if importingPkg == old.ImportPath {
@@ -469,7 +469,7 @@ func (state *golistState) createDriverResponse(words ...string) (*DriverResponse
 						// stack, instead of the importer. Look for importer in second from top
 						// position.
 						if len(old.Error.ImportStack) < 2 {
-							return nil, fmt.Errorf(`internal error: go list gave a %q error with an import stack without importing package`, errkind)
+							return nil, fmt.Errorf(`core error: go list gave a %q error with an import stack without importing package`, errkind)
 						}
 						importingPkg = old.Error.ImportStack[len(old.Error.ImportStack)-2]
 					}
@@ -557,7 +557,7 @@ func (state *golistState) createDriverResponse(words ...string) (*DriverResponse
 
 		// Assume go list emits only absolute paths for Dir.
 		if p.Dir != "" && !filepath.IsAbs(p.Dir) {
-			log.Fatalf("internal error: go list returned non-absolute Package.Dir: %s", p.Dir)
+			log.Fatalf("core error: go list returned non-absolute Package.Dir: %s", p.Dir)
 		}
 
 		if p.Export != "" && !filepath.IsAbs(p.Export) {

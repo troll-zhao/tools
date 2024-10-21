@@ -3,10 +3,10 @@
 // license that can be found in the LICENSE file.
 
 // Except for this comment and the import path, this file is a verbatim copy of the file
-// with the same name in $GOROOT/src/go/internal/gccgoimporter.
+// with the same name in $GOROOT/src/go/core/gccgoimporter.
 
 // Package gccgoimporter implements Import for gccgo-generated object files.
-package gccgoimporter // import "golang.org/x/tools/go/internal/gccgoimporter"
+package gccgoimporter // import "golang.org/x/tools/go/core/gccgoimporter"
 
 import (
 	"debug/elf"

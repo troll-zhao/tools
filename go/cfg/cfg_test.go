@@ -13,9 +13,9 @@ import (
 	"go/token"
 	"testing"
 
+	"golang.custom.org/x/tools/core/testenv"
 	"golang.org/x/tools/go/cfg"
 	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/internal/testenv"
 )
 
 const src = `package main

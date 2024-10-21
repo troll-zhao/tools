@@ -29,11 +29,11 @@ import (
 	"time"
 	"unsafe"
 
+	"golang.custom.org/x/tools/core/testenv"
 	"golang.org/x/tools/go/loader"
 	"golang.org/x/tools/go/ssa"
 	"golang.org/x/tools/go/ssa/interp"
 	"golang.org/x/tools/go/ssa/ssautil"
-	"golang.org/x/tools/internal/testenv"
 )
 
 // Each line contains a space-separated list of $GOROOT/test/

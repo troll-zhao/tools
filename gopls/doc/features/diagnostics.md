@@ -124,7 +124,7 @@ Client support:
 - **Vim + coc.nvim**: ??
 - **CLI**: `gopls check file.go`
 
-<!-- Below we list any quick fixes (by their internal fix name)
+<!-- Below we list any quick fixes (by their core fix name)
      that aren't analyzers. -->
 
 ### `stubMissingInterfaceMethods`: Declare missing methods of I

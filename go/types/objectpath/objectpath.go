@@ -29,8 +29,8 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.org/x/tools/internal/aliases"
-	"golang.org/x/tools/internal/typesinternal"
+	"golang.custom.org/x/tools/core/aliases"
+	"golang.custom.org/x/tools/core/typesinternal"
 )
 
 // TODO(adonovan): think about generic aliases.

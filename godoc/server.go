@@ -72,7 +72,7 @@ func (h *handlerServer) GetPageInfo(abspath, relpath string, mode PageInfoMode, 
 		f, err := h.c.fs.ReadDir(filepath.ToSlash(dir))
 		filtered := make([]os.FileInfo, 0, len(f))
 		for _, i := range f {
-			if mode&NoFiltering != 0 || i.Name() != "internal" {
+			if mode&NoFiltering != 0 || i.Name() != "core" {
 				filtered = append(filtered, i)
 			}
 		}
@@ -231,13 +231,13 @@ func (h *handlerServer) includePath(path string, mode PageInfoMode) (r bool) {
 		}
 	}
 
-	// if the path includes 'internal', don't list unless we are in the NoFiltering mode.
+	// if the path includes 'core', don't list unless we are in the NoFiltering mode.
 	if mode&NoFiltering != 0 {
 		return true
 	}
-	if strings.Contains(path, "internal") || strings.Contains(path, "vendor") {
+	if strings.Contains(path, "core") || strings.Contains(path, "vendor") {
 		for _, c := range strings.Split(filepath.Clean(path), string(os.PathSeparator)) {
-			if c == "internal" || c == "vendor" {
+			if c == "core" || c == "vendor" {
 				return false
 			}
 		}

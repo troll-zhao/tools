@@ -12,11 +12,11 @@ import (
 	"go/types"
 	"regexp"
 
+	"golang.custom.org/x/tools/core/typesinternal"
+	"golang.custom.org/x/tools/core/versions"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/inspect"
 	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/internal/typesinternal"
-	"golang.org/x/tools/internal/versions"
 )
 
 const Doc = `report uses of too-new standard library symbols
@@ -115,7 +115,7 @@ func run(pass *analysis.Pass) (any, error) {
 	return nil, nil
 }
 
-// Reduced from x/tools/gopls/internal/golang/util.go. Good enough for now.
+// Reduced from x/tools/gopls/core/golang/util.go. Good enough for now.
 // TODO(adonovan): use ast.IsGenerated in go1.21.
 func isGenerated(f *ast.File) bool {
 	for _, group := range f.Comments {

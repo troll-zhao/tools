@@ -13,8 +13,8 @@ import (
 	"strings"
 	"testing"
 
+	"golang.custom.org/x/tools/core/testenv"
 	"golang.org/x/tools/go/buildutil"
-	"golang.org/x/tools/internal/testenv"
 )
 
 func TestTags(t *testing.T) {

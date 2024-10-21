@@ -7,10 +7,10 @@ package buildtag_test
 import (
 	"testing"
 
+	"golang.custom.org/x/tools/core/versions"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/analysistest"
 	"golang.org/x/tools/go/analysis/passes/buildtag"
-	"golang.org/x/tools/internal/versions"
 )
 
 func Test(t *testing.T) {

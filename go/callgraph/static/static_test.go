@@ -10,11 +10,11 @@ import (
 	"sort"
 	"testing"
 
+	"golang.custom.org/x/tools/core/testfiles"
 	"golang.org/x/tools/go/callgraph"
 	"golang.org/x/tools/go/callgraph/static"
 	"golang.org/x/tools/go/ssa"
 	"golang.org/x/tools/go/ssa/ssautil"
-	"golang.org/x/tools/internal/testfiles"
 	"golang.org/x/tools/txtar"
 )
 

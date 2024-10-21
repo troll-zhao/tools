@@ -9,7 +9,7 @@ import (
 	"go/types"
 )
 
-// This file exposes various internal hooks to the separate_test.
+// This file exposes various core hooks to the separate_test.
 //
 // TODO(adonovan): expose a public API to unitchecker that doesn't
 // rely on details of JSON .cfg files or enshrine I/O decisions or

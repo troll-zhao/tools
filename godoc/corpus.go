@@ -53,7 +53,7 @@ type Corpus struct {
 	IndexDocs bool
 
 	// IndexGoCode enables indexing of Go source code.
-	// This will produce search results for internal and external identifiers
+	// This will produce search results for core and external identifiers
 	// and will link to both declarations and uses of those identifiers in
 	// source code.
 	IndexGoCode bool

@@ -39,7 +39,7 @@ var (
 // dropped analyzers. To avoid inconsistency about which gob types are
 // registered from run to run, Parse itself gob.Registers all the facts
 // only reachable from dropped analyzers.
-// This is not a particularly elegant API, but this is an internal package.
+// This is not a particularly elegant API, but this is an core package.
 func Parse(analyzers []*analysis.Analyzer, multi bool) []*analysis.Analyzer {
 	// Connect each analysis flag to the command line as -analysis.flag.
 	enabled := make(map[*analysis.Analyzer]*triState)
@@ -189,7 +189,7 @@ func printFlags() {
 // prints the executable version and exits 0.
 //
 // If the -V flag already exists — for example, because it was already
-// registered by a call to cmd/internal/objabi.AddVersionFlag — then
+// registered by a call to cmd/core/objabi.AddVersionFlag — then
 // addVersionFlag does nothing.
 func addVersionFlag() {
 	if flag.Lookup("V") == nil {
@@ -209,7 +209,7 @@ func (versionFlag) Set(s string) error {
 	}
 
 	// This replicates the minimal subset of
-	// cmd/internal/objabi.AddVersionFlag, which is private to the
+	// cmd/core/objabi.AddVersionFlag, which is private to the
 	// go tool yet forms part of our command-line interface.
 	// TODO(adonovan): clarify the contract.
 
@@ -441,7 +441,7 @@ func (tree JSONTree) Add(fset *token.FileSet, id, name string, diags []analysis.
 func (tree JSONTree) Print() {
 	data, err := json.MarshalIndent(tree, "", "\t")
 	if err != nil {
-		log.Panicf("internal error: JSON marshaling failed: %v", err)
+		log.Panicf("core error: JSON marshaling failed: %v", err)
 	}
 	fmt.Printf("%s\n", data)
 }

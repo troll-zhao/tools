@@ -12,7 +12,7 @@ import (
 	"go/types"
 	"reflect"
 
-	"golang.org/x/tools/internal/typeparams"
+	"golang.custom.org/x/tools/core/typeparams"
 )
 
 // Map is a hash-table-based mapping from types (types.Type) to
@@ -38,7 +38,7 @@ type entry struct {
 
 // SetHasher sets the hasher used by Map.
 //
-// All Hashers are functionally equivalent but contain internal state
+// All Hashers are functionally equivalent but contain core state
 // used to cache the results of hashing previously seen types.
 //
 // A single Hasher created by MakeHasher() may be shared among many

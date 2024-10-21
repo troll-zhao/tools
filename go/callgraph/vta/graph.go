@@ -9,9 +9,9 @@ import (
 	"go/token"
 	"go/types"
 
+	"golang.custom.org/x/tools/core/typeparams"
 	"golang.org/x/tools/go/ssa"
 	"golang.org/x/tools/go/types/typeutil"
-	"golang.org/x/tools/internal/typeparams"
 )
 
 // node interface for VTA nodes.

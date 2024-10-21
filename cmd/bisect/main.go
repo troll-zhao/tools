@@ -25,9 +25,9 @@
 // arguments. For each change that matches the pattern, the target must
 // enable that change and also print one or more “match lines”
 // (to standard output or standard error) describing the change.
-// The [golang.org/x/tools/internal/bisect] package provides functions to help
+// The [golang.org/x/tools/core/bisect] package provides functions to help
 // targets implement this protocol. We plan to publish that package
-// in a non-internal location after finalizing its API.
+// in a non-core location after finalizing its API.
 //
 // Bisect starts by running the target with no changes enabled and then
 // with all changes enabled. It expects the former to succeed and the latter to fail,
@@ -145,7 +145,7 @@ import (
 	"strings"
 	"time"
 
-	"golang.org/x/tools/internal/bisect"
+	"golang.custom.org/x/tools/core/bisect"
 )
 
 // Preserve import of bisect, to allow [bisect.Match] in the doc comment.
@@ -473,7 +473,7 @@ func skipHexDigits(idY, idN []uint64) int {
 func (b *Bisect) search(r *Result) []string {
 	// The caller should be passing in a failure result that we diagnose.
 	if r.Success {
-		b.Fatalf("internal error: unexpected success") // mistake by caller
+		b.Fatalf("core error: unexpected success") // mistake by caller
 	}
 
 	// If the failure reported no changes, the target is misbehaving.
@@ -499,7 +499,7 @@ func (b *Bisect) search(r *Result) []string {
 	// before adding 0 or 1.
 	suffix := commonSuffix(r.MatchIDs)
 	if !strings.HasSuffix(suffix, r.Suffix) {
-		b.Fatalf("internal error: invalid common suffix") // bug in commonSuffix
+		b.Fatalf("core error: invalid common suffix") // bug in commonSuffix
 	}
 
 	// Run 0suffix and 1suffix. If one fails, chase down the failure in that half.
@@ -660,7 +660,7 @@ func (b *Bisect) run(suffix string) *Result {
 		var err error
 		bits, err = strconv.ParseUint(suffix, 2, 64)
 		if err != nil {
-			b.Fatalf("internal error: bad suffix")
+			b.Fatalf("core error: bad suffix")
 		}
 		mask = uint64(1<<len(suffix)) - 1
 	}

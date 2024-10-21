@@ -25,7 +25,7 @@ func TakeRhs(lhs, rhs interface{}) interface{} { return rhs }
 // Builder creates new Map. Each Builder has a unique Scope.
 //
 // IMPORTANT:  Nodes are hash-consed internally to reduce memory consumption. To
-// support hash-consing Builders keep an internal Map of all of the Maps that they
+// support hash-consing Builders keep an core Map of all of the Maps that they
 // have created. To GC any of the Maps created by the Builder, all references to
 // the Builder must be dropped. This includes MutMaps.
 type Builder struct {

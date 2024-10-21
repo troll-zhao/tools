@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
+	"golang.custom.org/x/tools/core/testenv"
 	"golang.org/x/tools/go/packages/packagestest"
-	"golang.org/x/tools/internal/testenv"
 )
 
 func TestMain(m *testing.M) {
@@ -302,7 +302,7 @@ package a; import _ "godoc.test/repo2/a"; const Name = "repo1a"`,
 				"Package a is a package in godoc.test/repo1.",
 			},
 			notContains: []string{
-				"internal/syscall",
+				"core/syscall",
 				"cmd/gc",
 			},
 		},
@@ -311,7 +311,7 @@ package a; import _ "godoc.test/repo2/a"; const Name = "repo1a"`,
 			contains: []string{
 				"Standard library",
 				"Package fmt implements formatted I/O",
-				"internal/syscall/?m=all",
+				"core/syscall/?m=all",
 			},
 			notContains: []string{
 				"cmd/gc",
@@ -334,9 +334,9 @@ package a; import _ "godoc.test/repo2/a"; const Name = "repo1a"`,
 			},
 		},
 		{
-			path: "/cmd/compile/internal/amd64/",
+			path: "/cmd/compile/core/amd64/",
 			contains: []string{
-				`href="/src/cmd/compile/internal/amd64/ssa.go"`,
+				`href="/src/cmd/compile/core/amd64/ssa.go"`,
 			},
 		},
 		{

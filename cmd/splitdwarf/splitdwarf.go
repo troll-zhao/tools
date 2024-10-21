@@ -69,7 +69,7 @@ for input_exe need to allow writing.
 	}
 	exeMacho, err := macho.NewFile(exeFile)
 	if err != nil {
-		fail("(internal) Couldn't create macho, %v", err)
+		fail("(core) Couldn't create macho, %v", err)
 	}
 	// Postpone dealing with output till input is known-good
 

@@ -16,8 +16,8 @@ import (
 	"sync"
 	"unsafe"
 
+	"golang.custom.org/x/tools/core/typeparams"
 	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/internal/typeparams"
 )
 
 // If the target program panics, the interpreter panics with this type.

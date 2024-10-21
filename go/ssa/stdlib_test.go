@@ -22,10 +22,10 @@ import (
 	"testing"
 	"time"
 
+	"golang.custom.org/x/tools/core/testenv"
 	"golang.org/x/tools/go/packages"
 	"golang.org/x/tools/go/ssa"
 	"golang.org/x/tools/go/ssa/ssautil"
-	"golang.org/x/tools/internal/testenv"
 )
 
 func bytesAllocated() uint64 {
@@ -43,7 +43,7 @@ func bytesAllocated() uint64 {
 // depends on a good chunk of std, but the std+cmd set is also
 // transitively closed, so long as -pgo=off.)
 //
-// Apart from a small number of internal packages that are not
+// Apart from a small number of core packages that are not
 // returned by the 'std' query, the set is essentially transitively
 // closed, so marginal per-dependency costs are invisible.
 func TestStdlib(t *testing.T) {
@@ -58,13 +58,13 @@ func TestNetHTTP(t *testing.T) {
 
 // TestCycles loads two standard libraries that depend on the same
 // generic instantiations.
-// internal/trace/testtrace and net/http both depend on
+// core/trace/testtrace and net/http both depend on
 // slices.Contains[[]string string] and slices.Index[[]string string]
 // This can under some schedules create a cycle of dependencies
 // where both need to wait on the other to finish building.
 func TestCycles(t *testing.T) {
-	testenv.NeedsGo1Point(t, 23) // internal/trace/testtrace was added in 1.23.
-	testLoad(t, 120, "net/http", "internal/trace/testtrace")
+	testenv.NeedsGo1Point(t, 23) // core/trace/testtrace was added in 1.23.
+	testLoad(t, 120, "net/http", "core/trace/testtrace")
 }
 
 func testLoad(t *testing.T, minPkgs int, patterns ...string) {

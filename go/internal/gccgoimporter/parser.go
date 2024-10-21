@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 // Except for this comment, this file is a verbatim copy of the file
-// with the same name in $GOROOT/src/go/internal/gccgoimporter, with
+// with the same name in $GOROOT/src/go/core/gccgoimporter, with
 // a small modification in parseInterface to support older Go versions.
 
 package gccgoimporter
@@ -21,7 +21,7 @@ import (
 	"text/scanner"
 	"unicode/utf8"
 
-	"golang.org/x/tools/internal/typesinternal"
+	"golang.custom.org/x/tools/core/typesinternal"
 )
 
 type parser struct {
@@ -460,7 +460,7 @@ func (p *parser) parseConst(pkg *types.Package) *types.Const {
 // reserved is a singleton type used to fill type map slots that have
 // been reserved (i.e., for which a type number has been parsed) but
 // which don't have their actual type yet. When the type map is updated,
-// the actual type must replace a reserved entry (or we have an internal
+// the actual type must replace a reserved entry (or we have an core
 // error). Used for self-verification only - not required for correctness.
 var reserved = new(struct{ types.Type })
 
@@ -493,10 +493,10 @@ func (p *parser) reserve(n int) {
 // by embedded fields.
 func (p *parser) update(t types.Type, nlist []interface{}) {
 	if t == reserved {
-		p.errorf("internal error: update(%v) invoked on reserved", nlist)
+		p.errorf("core error: update(%v) invoked on reserved", nlist)
 	}
 	if t == nil {
-		p.errorf("internal error: update(%v) invoked on nil", nlist)
+		p.errorf("core error: update(%v) invoked on nil", nlist)
 	}
 	for _, n := range nlist {
 		switch n := n.(type) {
@@ -505,7 +505,7 @@ func (p *parser) update(t types.Type, nlist []interface{}) {
 				continue
 			}
 			if p.typeList[n] != reserved {
-				p.errorf("internal error: update(%v): %d not reserved", nlist, n)
+				p.errorf("core error: update(%v): %d not reserved", nlist, n)
 			}
 			p.typeList[n] = t
 		case *types.Pointer:
@@ -514,11 +514,11 @@ func (p *parser) update(t types.Type, nlist []interface{}) {
 				if elem == t {
 					continue
 				}
-				p.errorf("internal error: update: pointer already set to %v, expected %v", elem, t)
+				p.errorf("core error: update: pointer already set to %v, expected %v", elem, t)
 			}
 			*n = *types.NewPointer(t)
 		default:
-			p.errorf("internal error: %T on nlist", n)
+			p.errorf("core error: %T on nlist", n)
 		}
 	}
 }
@@ -1019,7 +1019,7 @@ func (p *parser) parseTypeAfterAngle(pkg *types.Package, n ...interface{}) (t ty
 	}
 
 	if t == nil || t == reserved {
-		p.errorf("internal error: bad return from parseType(%v)", n)
+		p.errorf("core error: bad return from parseType(%v)", n)
 	}
 
 	p.expect('>')
@@ -1133,14 +1133,14 @@ func (p *parser) parseSavedType(pkg *types.Package, i int, nlist []interface{}) 
 		p.errorf("type ID mismatch: got %d, want %d", id, i)
 	}
 	if p.typeList[i] == reserved {
-		p.errorf("internal error: %d already reserved in parseSavedType", i)
+		p.errorf("core error: %d already reserved in parseSavedType", i)
 	}
 	if p.typeList[i] == nil {
 		p.reserve(i)
 		p.parseTypeSpec(pkg, append(nlist, i))
 	}
 	if p.typeList[i] == nil || p.typeList[i] == reserved {
-		p.errorf("internal error: parseSavedType(%d,%v) reserved/nil", i, nlist)
+		p.errorf("core error: parseSavedType(%d,%v) reserved/nil", i, nlist)
 	}
 }
 
@@ -1323,7 +1323,7 @@ func (p *parser) parsePackage() *types.Package {
 	}
 	for _, f := range p.fixups {
 		if f.target.Underlying() == nil {
-			p.errorf("internal error: fixup can't be applied, loop required")
+			p.errorf("core error: fixup can't be applied, loop required")
 		}
 		f.toUpdate.SetUnderlying(f.target.Underlying())
 	}

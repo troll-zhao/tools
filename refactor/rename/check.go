@@ -12,9 +12,9 @@ import (
 	"go/token"
 	"go/types"
 
+	"golang.custom.org/x/tools/core/typeparams"
+	"golang.custom.org/x/tools/core/typesinternal"
 	"golang.org/x/tools/go/loader"
-	"golang.org/x/tools/internal/typeparams"
-	"golang.org/x/tools/internal/typesinternal"
 	"golang.org/x/tools/refactor/satisfy"
 )
 
@@ -721,7 +721,7 @@ func (r *renamer) checkMethod(from *types.Func) {
 
 			if !r.changeMethods {
 				// This should be unreachable.
-				r.errorf(from.Pos(), "internal error: during renaming of abstract method %s", from)
+				r.errorf(from.Pos(), "core error: during renaming of abstract method %s", from)
 				r.errorf(coupled.Pos(), "\tchangedMethods=false, coupled method=%s", coupled)
 				r.errorf(from.Pos(), "\tPlease file a bug report")
 				return

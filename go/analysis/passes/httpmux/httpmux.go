@@ -11,13 +11,13 @@ import (
 	"regexp"
 	"strings"
 
+	"golang.custom.org/x/tools/core/typesinternal"
 	"golang.org/x/mod/semver"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/inspect"
 	"golang.org/x/tools/go/analysis/passes/internal/analysisutil"
 	"golang.org/x/tools/go/ast/inspector"
 	"golang.org/x/tools/go/types/typeutil"
-	"golang.org/x/tools/internal/typesinternal"
 )
 
 const Doc = `report using Go 1.22 enhanced ServeMux patterns in older Go versions
@@ -161,7 +161,7 @@ var (
 	tagRegexp = regexp.MustCompile(`^go(\d+\.\d+)(\.\d+|)((beta|rc)(\d+))?$`)
 )
 
-// Copied from pkgsite/internal/stdlib.VersionForTag.
+// Copied from pkgsite/core/stdlib.VersionForTag.
 func versionFromGoVersion(goVersion string) string {
 	// Special cases for go1.
 	if goVersion == "go1" {

@@ -12,10 +12,10 @@ import (
 	"go/types"
 	"strings"
 
+	"golang.custom.org/x/tools/core/typeparams"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/inspect"
 	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/internal/typeparams"
 )
 
 const Doc = `check for unkeyed composite literals
@@ -143,7 +143,7 @@ func run(pass *analysis.Pass) (interface{}, error) {
 }
 
 // isLocalType reports whether typ belongs to the same package as pass.
-// TODO(adonovan): local means "internal to a function"; rename to isSamePackageType.
+// TODO(adonovan): local means "core to a function"; rename to isSamePackageType.
 func isLocalType(pass *analysis.Pass, typ types.Type) bool {
 	switch x := types.Unalias(typ).(type) {
 	case *types.Struct:

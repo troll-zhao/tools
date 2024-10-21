@@ -9,13 +9,13 @@ import (
 	"go/ast"
 	"go/types"
 
+	"golang.custom.org/x/tools/core/typesinternal"
+	"golang.custom.org/x/tools/core/versions"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/inspect"
 	"golang.org/x/tools/go/analysis/passes/internal/analysisutil"
 	"golang.org/x/tools/go/ast/inspector"
 	"golang.org/x/tools/go/types/typeutil"
-	"golang.org/x/tools/internal/typesinternal"
-	"golang.org/x/tools/internal/versions"
 )
 
 //go:embed doc.go

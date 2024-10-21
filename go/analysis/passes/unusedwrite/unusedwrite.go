@@ -8,11 +8,11 @@ import (
 	_ "embed"
 	"go/types"
 
+	"golang.custom.org/x/tools/core/typeparams"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/buildssa"
 	"golang.org/x/tools/go/analysis/passes/internal/analysisutil"
 	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/internal/typeparams"
 )
 
 //go:embed doc.go

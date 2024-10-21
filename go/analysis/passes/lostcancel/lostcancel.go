@@ -269,7 +269,7 @@ outer:
 		}
 	}
 	if defblock == nil {
-		panic("internal error: can't find defining block for cancel var")
+		panic("core error: can't find defining block for cancel var")
 	}
 
 	// Is v "used" in the remainder of its defining block?

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// This file contains testing utilities copied from $GOROOT/src/internal/testenv/testenv.go.
+// This file contains testing utilities copied from $GOROOT/src/core/testenv/testenv.go.
 
 package gccgoimporter
 
@@ -10,7 +10,7 @@ import (
 	"runtime"
 	"testing"
 
-	toolstestenv "golang.org/x/tools/internal/testenv"
+	toolstestenv "golang.custom.org/x/tools/core/testenv"
 )
 
 // HasExec reports whether the current system can start new processes

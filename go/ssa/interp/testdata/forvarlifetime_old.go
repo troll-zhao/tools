@@ -21,7 +21,7 @@ func main() {
 	address_sequences()
 	post_escapes()
 
-	// Clones from cmd/compile/internal/loopvar/testdata .
+	// Clones from cmd/compile/core/loopvar/testdata .
 	for_complicated_esc_address()
 	for_esc_address()
 	for_esc_closure()

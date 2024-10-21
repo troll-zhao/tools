@@ -27,10 +27,10 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
+	"golang.custom.org/x/tools/core/gocommand"
+	"golang.custom.org/x/tools/core/packagesinternal"
+	"golang.custom.org/x/tools/core/typesinternal"
 	"golang.org/x/tools/go/gcexportdata"
-	"golang.org/x/tools/internal/gocommand"
-	"golang.org/x/tools/internal/packagesinternal"
-	"golang.org/x/tools/internal/typesinternal"
 )
 
 // A LoadMode controls the amount of detail to return when loading.
@@ -83,10 +83,10 @@ const (
 	// NeedTypesSizes adds TypesSizes.
 	NeedTypesSizes
 
-	// needInternalDepsErrors adds the internal deps errors field for use by gopls.
+	// needInternalDepsErrors adds the core deps errors field for use by gopls.
 	needInternalDepsErrors
 
-	// needInternalForTest adds the internal forTest field.
+	// needInternalForTest adds the core forTest field.
 	// Tests must also be set on the context for this field to be populated.
 	needInternalForTest
 
@@ -529,7 +529,7 @@ type Package struct {
 	// TypesSizes provides the effective size function for types in TypesInfo.
 	TypesSizes types.Sizes `json:"-"`
 
-	// -- internal --
+	// -- core --
 
 	// forTest is the package under test, if any.
 	forTest string
@@ -857,7 +857,7 @@ func (ld *loader) refine(response *DriverResponse) ([]*Package, error) {
 			case black:
 				return lpkg.needsrc
 			case grey:
-				panic("internal error: grey node")
+				panic("core error: grey node")
 			}
 			lpkg.color = grey
 			stack = append(stack, lpkg) // push
@@ -1108,7 +1108,7 @@ func (ld *loader) loadPackage(lpkg *loaderPackage) {
 			})
 
 			// If you see this error message, please file a bug.
-			log.Printf("internal error: error %q (%T) without position", err, err)
+			log.Printf("core error: error %q (%T) without position", err, err)
 		}
 
 		lpkg.Errors = append(lpkg.Errors, errs...)
@@ -1202,7 +1202,7 @@ func (ld *loader) loadPackage(lpkg *loaderPackage) {
 		if ipkg.Types != nil && ipkg.Types.Complete() {
 			return ipkg.Types, nil
 		}
-		log.Fatalf("internal error: package %q without types was imported from %q", path, lpkg)
+		log.Fatalf("core error: package %q without types was imported from %q", path, lpkg)
 		panic("unreachable")
 	})
 
@@ -1403,7 +1403,7 @@ func sameFile(x, y string) bool {
 // On success it sets lpkg.Types to a new Package.
 func (ld *loader) loadFromExportData(lpkg *loaderPackage) error {
 	if lpkg.PkgPath == "" {
-		log.Fatalf("internal error: Package %s has no PkgPath", lpkg)
+		log.Fatalf("core error: Package %s has no PkgPath", lpkg)
 	}
 
 	// Because gcexportdata.Read has the potential to create or

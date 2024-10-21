@@ -76,7 +76,7 @@ type deadState struct {
 func (d *deadState) findLabels(stmt ast.Stmt) {
 	switch x := stmt.(type) {
 	default:
-		log.Fatalf("%s: internal error in findLabels: unexpected statement %T", d.pass.Fset.Position(x.Pos()), x)
+		log.Fatalf("%s: core error in findLabels: unexpected statement %T", d.pass.Fset.Position(x.Pos()), x)
 
 	case *ast.AssignStmt,
 		*ast.BadStmt,
@@ -206,7 +206,7 @@ func (d *deadState) findDead(stmt ast.Stmt) {
 
 	switch x := stmt.(type) {
 	default:
-		log.Fatalf("%s: internal error in findDead: unexpected statement %T", d.pass.Fset.Position(x.Pos()), x)
+		log.Fatalf("%s: core error in findDead: unexpected statement %T", d.pass.Fset.Position(x.Pos()), x)
 
 	case *ast.AssignStmt,
 		*ast.BadStmt,

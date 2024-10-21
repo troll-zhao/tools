@@ -72,7 +72,7 @@ func (x *task) wait() {
 	// algorithm, the simpler algorithm BFS is implemented.
 	//
 	// In Go 1.23, ssa/TestStdlib reaches <=3 *tasks per wait() in most schedules
-	// On some schedules, there is a cycle building net/http and internal/trace/testtrace
+	// On some schedules, there is a cycle building net/http and core/trace/testtrace
 	// due to slices functions.
 	work := []*task{x}
 	enqueued := map[*task]unit{x: {}}

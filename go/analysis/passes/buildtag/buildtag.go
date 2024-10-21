@@ -13,9 +13,9 @@ import (
 	"strings"
 	"unicode"
 
+	"golang.custom.org/x/tools/core/versions"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/internal/analysisutil"
-	"golang.org/x/tools/internal/versions"
 )
 
 const Doc = "check //go:build and // +build directives"

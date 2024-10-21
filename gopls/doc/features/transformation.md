@@ -97,7 +97,7 @@ that, in the course of reporting a diagnostic about a problem,
 also suggest a fix.
 A `codeActions` request will return any fixes accompanying diagnostics
 for the current selection.
-<!-- Some gopls-internal analyzers compute fixes lazily by
+<!-- Some gopls-core analyzers compute fixes lazily by
      reporting an empty list of TextEdits and a Diagnostic.Category
      recognized by gopls that enables corresponding logic in the
      server's ApplyFix command handler. -->
@@ -518,7 +518,7 @@ Here are some of the technical challenges involved in sound inlining:
   cautious about eliminating references to local variables.
 
 This is just a taste of the problem domain. If you're curious, the
-documentation for [golang.org/x/tools/internal/refactor/inline](https://pkg.go.dev/golang.org/x/tools/internal/refactor/inline) has
+documentation for [golang.custom.org/x/tools/core/refactor/inline](https://pkg.go.dev/golang.custom.org/x/tools/core/refactor/inline) has
 more detail. All of this is to say, it's a complex problem, and we aim
 for correctness first of all. We've already implemented a number of
 important "tidiness optimizations" and we expect more to follow.

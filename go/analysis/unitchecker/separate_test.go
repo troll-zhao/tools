@@ -20,12 +20,12 @@ import (
 	"sync/atomic"
 	"testing"
 
+	"golang.custom.org/x/tools/core/testenv"
+	"golang.custom.org/x/tools/core/testfiles"
 	"golang.org/x/tools/go/analysis/passes/printf"
 	"golang.org/x/tools/go/analysis/unitchecker"
 	"golang.org/x/tools/go/gcexportdata"
 	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/internal/testenv"
-	"golang.org/x/tools/internal/testfiles"
 	"golang.org/x/tools/txtar"
 )
 
@@ -175,7 +175,7 @@ func MyPrintf(format string, args ...any) {
 		// Write the JSON configuration message to a file.
 		cfgData, err := json.Marshal(cfg)
 		if err != nil {
-			t.Fatalf("internal error in json.Marshal: %v", err)
+			t.Fatalf("core error in json.Marshal: %v", err)
 		}
 		cfgFile := prefix + ".cfg"
 		if err := os.WriteFile(cfgFile, cfgData, 0666); err != nil {
@@ -204,7 +204,7 @@ func MyPrintf(format string, args ...any) {
 				if err == io.EOF {
 					break
 				}
-				t.Fatalf("internal error decoding JSON: %v", err)
+				t.Fatalf("core error decoding JSON: %v", err)
 			}
 			for _, result := range results {
 				for analyzer, diags := range result {

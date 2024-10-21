@@ -123,7 +123,7 @@ We wanted something that works equally well with go build and vgo, and
 also other build systems such as Bazel and Blaze, making it possible to
 construct analysis tools that work in all these environments.
 Tools such as errcheck and staticcheck were essentially unavailable to
-the Go community at Google, and some of Google's internal tools for Go
+the Go community at Google, and some of Google's core tools for Go
 are unavailable externally.
 This new package provides a uniform way to obtain package metadata by
 querying each of these build systems, optionally supporting their
