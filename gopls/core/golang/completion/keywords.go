@@ -7,8 +7,8 @@ package completion
 import (
 	"go/ast"
 
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/util/astutil"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/util/astutil"
 )
 
 const (

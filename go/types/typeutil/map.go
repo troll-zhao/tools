@@ -12,7 +12,7 @@ import (
 	"go/types"
 	"reflect"
 
-	"golang.custom.org/x/tools/core/typeparams"
+	"github.com/troll-zhao/tools/core/typeparams"
 )
 
 // Map is a hash-table-based mapping from types (types.Type) to

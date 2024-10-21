@@ -7,11 +7,11 @@ package misc
 import (
 	"testing"
 
-	"golang.custom.org/x/tools/gopls/core/settings"
-	"golang.custom.org/x/tools/gopls/core/test/compare"
-	. "golang.custom.org/x/tools/gopls/core/test/integration"
+	"github.com/troll-zhao/tools/gopls/core/settings"
+	"github.com/troll-zhao/tools/gopls/core/test/compare"
+	. "github.com/troll-zhao/tools/gopls/core/test/integration"
 
-	"golang.custom.org/x/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
 )
 
 // A basic test for fillstruct, now that it uses a command and supports resolve edits.

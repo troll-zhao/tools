@@ -7,7 +7,7 @@ package undeclaredname_test
 import (
 	"testing"
 
-	"golang.custom.org/x/tools/gopls/core/analysis/undeclaredname"
+	"github.com/troll-zhao/tools/gopls/core/analysis/undeclaredname"
 	"golang.org/x/tools/go/analysis/analysistest"
 )
 

@@ -12,13 +12,13 @@ import (
 	"go/types"
 	"strings"
 
-	"golang.custom.org/x/tools/core/event"
-	"golang.custom.org/x/tools/gopls/core/cache"
-	"golang.custom.org/x/tools/gopls/core/file"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/settings"
-	"golang.custom.org/x/tools/gopls/core/util/bug"
-	"golang.custom.org/x/tools/gopls/core/util/typesutil"
+	"github.com/troll-zhao/tools/core/event"
+	"github.com/troll-zhao/tools/gopls/core/cache"
+	"github.com/troll-zhao/tools/gopls/core/file"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/settings"
+	"github.com/troll-zhao/tools/gopls/core/util/bug"
+	"github.com/troll-zhao/tools/gopls/core/util/typesutil"
 	"golang.org/x/tools/go/ast/astutil"
 )
 

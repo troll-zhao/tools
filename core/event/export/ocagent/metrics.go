@@ -7,9 +7,9 @@ package ocagent
 import (
 	"time"
 
-	"golang.custom.org/x/tools/core/event/export/metric"
-	"golang.custom.org/x/tools/core/event/export/ocagent/wire"
-	"golang.custom.org/x/tools/core/event/label"
+	"github.com/troll-zhao/tools/core/event/export/metric"
+	"github.com/troll-zhao/tools/core/event/export/ocagent/wire"
+	"github.com/troll-zhao/tools/core/event/label"
 )
 
 // dataToMetricDescriptor return a *wire.MetricDescriptor based on data.

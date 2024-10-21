@@ -12,7 +12,7 @@ import (
 	"go/printer"
 	"go/token"
 
-	"golang.custom.org/x/tools/core/analysisinternal"
+	"github.com/troll-zhao/tools/core/analysisinternal"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/inspect"
 	"golang.org/x/tools/go/ast/inspector"

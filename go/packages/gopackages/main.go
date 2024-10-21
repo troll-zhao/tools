@@ -19,8 +19,8 @@ import (
 	"sort"
 	"strings"
 
-	"golang.custom.org/x/tools/core/drivertest"
-	"golang.custom.org/x/tools/core/tool"
+	"github.com/troll-zhao/tools/core/drivertest"
+	"github.com/troll-zhao/tools/core/tool"
 	"golang.org/x/tools/go/packages"
 	"golang.org/x/tools/go/types/typeutil"
 )

@@ -7,7 +7,7 @@ package simplifyslice_test
 import (
 	"testing"
 
-	"golang.custom.org/x/tools/gopls/core/analysis/simplifyslice"
+	"github.com/troll-zhao/tools/gopls/core/analysis/simplifyslice"
 	"golang.org/x/tools/go/analysis/analysistest"
 )
 

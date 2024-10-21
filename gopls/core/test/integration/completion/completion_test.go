@@ -13,12 +13,12 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"golang.custom.org/x/tools/core/testenv"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/server"
-	. "golang.custom.org/x/tools/gopls/core/test/integration"
-	"golang.custom.org/x/tools/gopls/core/test/integration/fake"
-	"golang.custom.org/x/tools/gopls/core/util/bug"
+	"github.com/troll-zhao/tools/core/testenv"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/server"
+	. "github.com/troll-zhao/tools/gopls/core/test/integration"
+	"github.com/troll-zhao/tools/gopls/core/test/integration/fake"
+	"github.com/troll-zhao/tools/gopls/core/util/bug"
 	"golang.org/x/telemetry/counter"
 	"golang.org/x/telemetry/counter/countertest"
 )

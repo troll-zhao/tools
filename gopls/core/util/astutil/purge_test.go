@@ -12,8 +12,8 @@ import (
 	"reflect"
 	"testing"
 
-	"golang.custom.org/x/tools/core/testenv"
-	"golang.custom.org/x/tools/gopls/core/util/astutil"
+	"github.com/troll-zhao/tools/core/testenv"
+	"github.com/troll-zhao/tools/gopls/core/util/astutil"
 	"golang.org/x/tools/go/packages"
 )
 

@@ -7,11 +7,11 @@ package server
 import (
 	"context"
 
-	"golang.custom.org/x/tools/core/event"
-	"golang.custom.org/x/tools/gopls/core/cache"
-	"golang.custom.org/x/tools/gopls/core/golang"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/telemetry"
+	"github.com/troll-zhao/tools/core/event"
+	"github.com/troll-zhao/tools/gopls/core/cache"
+	"github.com/troll-zhao/tools/gopls/core/golang"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/telemetry"
 )
 
 func (s *server) Symbol(ctx context.Context, params *protocol.WorkspaceSymbolParams) (_ []protocol.SymbolInformation, rerr error) {

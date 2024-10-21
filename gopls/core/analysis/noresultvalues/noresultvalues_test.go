@@ -7,7 +7,7 @@ package noresultvalues_test
 import (
 	"testing"
 
-	"golang.custom.org/x/tools/gopls/core/analysis/noresultvalues"
+	"github.com/troll-zhao/tools/gopls/core/analysis/noresultvalues"
 	"golang.org/x/tools/go/analysis/analysistest"
 )
 

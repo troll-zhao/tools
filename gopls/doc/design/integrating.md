@@ -61,7 +61,7 @@ This is currently being added to gopls by a community member, and tracked in [#3
 
 [InitializeResult]: https://pkg.go.dev/golang.org/x/tools/gopls/internal/protocol#InitializeResult
 [ServerCapabilities]: https://pkg.go.dev/golang.org/x/tools/gopls/internal/protocol#ServerCapabilities
-[`golang.org/x/tools/gopls/internal/protocol`]: https://pkg.go.dev/golang.custom.org/x/tools/core/protocol#NewPoint
+[`golang.org/x/tools/gopls/internal/protocol`]: https://pkg.go.dev/github.com/troll-zhao/tools/core/protocol#NewPoint
 
 [LSP specification]: https://microsoft.github.io/language-server-protocol/specifications/specification-3-14/
 [lsp-response]: https://github.com/Microsoft/language-server-protocol/blob/gh-pages/_specifications/specification-3-14.md#response-message

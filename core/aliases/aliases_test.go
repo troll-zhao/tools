@@ -11,8 +11,8 @@ import (
 	"go/types"
 	"testing"
 
-	"golang.custom.org/x/tools/core/aliases"
-	"golang.custom.org/x/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/aliases"
+	"github.com/troll-zhao/tools/core/testenv"
 )
 
 // TestNewAlias tests that alias.NewAlias creates an alias of a type

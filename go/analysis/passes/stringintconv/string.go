@@ -11,8 +11,8 @@ import (
 	"go/types"
 	"strings"
 
-	"golang.custom.org/x/tools/core/analysisinternal"
-	"golang.custom.org/x/tools/core/typeparams"
+	"github.com/troll-zhao/tools/core/analysisinternal"
+	"github.com/troll-zhao/tools/core/typeparams"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/inspect"
 	"golang.org/x/tools/go/analysis/passes/internal/analysisutil"

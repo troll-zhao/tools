@@ -19,8 +19,8 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.custom.org/x/tools/core/packagesinternal"
-	"golang.custom.org/x/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/core/packagesinternal"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
 	"golang.org/x/tools/go/packages"
 )
 

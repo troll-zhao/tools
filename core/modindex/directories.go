@@ -15,7 +15,7 @@ import (
 	"sync"
 	"time"
 
-	"golang.custom.org/x/tools/core/gopathwalk"
+	"github.com/troll-zhao/tools/core/gopathwalk"
 	"golang.org/x/mod/semver"
 )
 

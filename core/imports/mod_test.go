@@ -19,10 +19,10 @@ import (
 	"testing"
 	"time"
 
-	"golang.custom.org/x/tools/core/gocommand"
-	"golang.custom.org/x/tools/core/gopathwalk"
-	"golang.custom.org/x/tools/core/proxydir"
-	"golang.custom.org/x/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/gocommand"
+	"github.com/troll-zhao/tools/core/gopathwalk"
+	"github.com/troll-zhao/tools/core/proxydir"
+	"github.com/troll-zhao/tools/core/testenv"
 	"golang.org/x/mod/module"
 	"golang.org/x/tools/txtar"
 )

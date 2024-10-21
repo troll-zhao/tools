@@ -16,8 +16,8 @@ import (
 	"strings"
 	"testing"
 
-	"golang.custom.org/x/tools/core/bisect"
-	"golang.custom.org/x/tools/core/diffp"
+	"github.com/troll-zhao/tools/core/bisect"
+	"github.com/troll-zhao/tools/core/diffp"
 	"golang.org/x/tools/txtar"
 )
 

@@ -13,7 +13,7 @@ import (
 	"strings"
 	"unicode"
 
-	"golang.custom.org/x/tools/core/versions"
+	"github.com/troll-zhao/tools/core/versions"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/internal/analysisutil"
 )

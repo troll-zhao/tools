@@ -12,10 +12,10 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"golang.custom.org/x/tools/core/testenv"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/settings"
-	"golang.custom.org/x/tools/gopls/core/test/integration/fake"
+	"github.com/troll-zhao/tools/core/testenv"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/settings"
+	"github.com/troll-zhao/tools/gopls/core/test/integration/fake"
 )
 
 func TestZeroConfigAlgorithm(t *testing.T) {

@@ -11,7 +11,7 @@ import (
 	"go/types"
 	"testing"
 
-	"golang.custom.org/x/tools/core/versions"
+	"github.com/troll-zhao/tools/core/versions"
 )
 
 func TestIsValid(t *testing.T) {

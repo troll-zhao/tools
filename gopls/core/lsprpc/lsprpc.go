@@ -19,15 +19,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"golang.custom.org/x/tools/core/event"
-	"golang.custom.org/x/tools/core/jsonrpc2"
-	"golang.custom.org/x/tools/gopls/core/cache"
-	"golang.custom.org/x/tools/gopls/core/debug"
-	"golang.custom.org/x/tools/gopls/core/label"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/protocol/command"
-	"golang.custom.org/x/tools/gopls/core/server"
-	"golang.custom.org/x/tools/gopls/core/settings"
+	"github.com/troll-zhao/tools/core/event"
+	"github.com/troll-zhao/tools/core/jsonrpc2"
+	"github.com/troll-zhao/tools/gopls/core/cache"
+	"github.com/troll-zhao/tools/gopls/core/debug"
+	"github.com/troll-zhao/tools/gopls/core/label"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/protocol/command"
+	"github.com/troll-zhao/tools/gopls/core/server"
+	"github.com/troll-zhao/tools/gopls/core/settings"
 )
 
 // Unique identifiers for client/server.

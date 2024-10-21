@@ -7,8 +7,8 @@ package diagnostics
 import (
 	"testing"
 
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	. "golang.custom.org/x/tools/gopls/core/test/integration"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	. "github.com/troll-zhao/tools/gopls/core/test/integration"
 )
 
 func TestUndeclaredDiagnostics(t *testing.T) {

@@ -12,7 +12,7 @@
 package main
 
 import (
-	inlineanalyzer "golang.custom.org/x/tools/core/refactor/inline/analyzer"
+	inlineanalyzer "github.com/troll-zhao/tools/core/refactor/inline/analyzer"
 	"golang.org/x/tools/go/analysis/singlechecker"
 )
 

@@ -16,7 +16,7 @@ import (
 	"log"
 	"os"
 
-	"golang.custom.org/x/tools/core/pprof"
+	"github.com/troll-zhao/tools/core/pprof"
 )
 
 func main() {

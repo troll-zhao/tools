@@ -9,7 +9,7 @@ import (
 	"go/ast"
 	"go/types"
 
-	"golang.custom.org/x/tools/core/typesinternal"
+	"github.com/troll-zhao/tools/core/typesinternal"
 )
 
 // ErrNoIdentFound is error returned when no identifier is found at a particular position

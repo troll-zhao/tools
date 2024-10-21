@@ -13,10 +13,10 @@ import (
 	"go/types"
 	"sort"
 
-	"golang.custom.org/x/tools/gopls/core/cache/metadata"
-	"golang.custom.org/x/tools/gopls/core/cache/parsego"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/util/frob"
+	"github.com/troll-zhao/tools/gopls/core/cache/metadata"
+	"github.com/troll-zhao/tools/gopls/core/cache/parsego"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/util/frob"
 	"golang.org/x/tools/go/types/objectpath"
 )
 

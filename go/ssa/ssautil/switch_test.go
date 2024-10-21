@@ -13,7 +13,7 @@ import (
 	"strings"
 	"testing"
 
-	"golang.custom.org/x/tools/core/testfiles"
+	"github.com/troll-zhao/tools/core/testfiles"
 	"golang.org/x/tools/go/ssa"
 	"golang.org/x/tools/go/ssa/ssautil"
 	"golang.org/x/tools/txtar"

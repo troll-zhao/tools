@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"golang.custom.org/x/tools/core/robustio"
+	"github.com/troll-zhao/tools/core/robustio"
 )
 
 func checkOSLink(t *testing.T, err error) {

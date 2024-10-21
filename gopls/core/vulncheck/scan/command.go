@@ -14,10 +14,10 @@ import (
 	"sort"
 	"time"
 
-	"golang.custom.org/x/tools/gopls/core/cache"
-	"golang.custom.org/x/tools/gopls/core/vulncheck"
-	"golang.custom.org/x/tools/gopls/core/vulncheck/govulncheck"
-	"golang.custom.org/x/tools/gopls/core/vulncheck/osv"
+	"github.com/troll-zhao/tools/gopls/core/cache"
+	"github.com/troll-zhao/tools/gopls/core/vulncheck"
+	"github.com/troll-zhao/tools/gopls/core/vulncheck/govulncheck"
+	"github.com/troll-zhao/tools/gopls/core/vulncheck/osv"
 	"golang.org/x/sync/errgroup"
 	"golang.org/x/vuln/scan"
 )

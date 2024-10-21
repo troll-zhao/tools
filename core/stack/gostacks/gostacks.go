@@ -13,7 +13,7 @@ import (
 	"fmt"
 	"os"
 
-	"golang.custom.org/x/tools/core/stack"
+	"github.com/troll-zhao/tools/core/stack"
 )
 
 func main() {

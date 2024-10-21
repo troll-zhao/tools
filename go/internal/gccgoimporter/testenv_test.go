@@ -10,7 +10,7 @@ import (
 	"runtime"
 	"testing"
 
-	toolstestenv "golang.custom.org/x/tools/core/testenv"
+	toolstestenv "github.com/troll-zhao/tools/core/testenv"
 )
 
 // HasExec reports whether the current system can start new processes

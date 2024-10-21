@@ -14,7 +14,7 @@ import (
 	"go/types"
 	"os"
 
-	"golang.custom.org/x/tools/core/analysisinternal"
+	"github.com/troll-zhao/tools/core/analysisinternal"
 	"golang.org/x/tools/go/analysis"
 )
 

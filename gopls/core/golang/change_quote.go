@@ -10,10 +10,10 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.custom.org/x/tools/core/diff"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/util/bug"
-	"golang.custom.org/x/tools/gopls/core/util/safetoken"
+	"github.com/troll-zhao/tools/core/diff"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/util/bug"
+	"github.com/troll-zhao/tools/gopls/core/util/safetoken"
 	"golang.org/x/tools/go/ast/astutil"
 )
 

@@ -7,13 +7,13 @@ package server
 import (
 	"context"
 
-	"golang.custom.org/x/tools/core/event"
-	"golang.custom.org/x/tools/gopls/core/file"
-	"golang.custom.org/x/tools/gopls/core/golang"
-	"golang.custom.org/x/tools/gopls/core/label"
-	"golang.custom.org/x/tools/gopls/core/mod"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/work"
+	"github.com/troll-zhao/tools/core/event"
+	"github.com/troll-zhao/tools/gopls/core/file"
+	"github.com/troll-zhao/tools/gopls/core/golang"
+	"github.com/troll-zhao/tools/gopls/core/label"
+	"github.com/troll-zhao/tools/gopls/core/mod"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/work"
 )
 
 func (s *server) Formatting(ctx context.Context, params *protocol.DocumentFormattingParams) ([]protocol.TextEdit, error) {

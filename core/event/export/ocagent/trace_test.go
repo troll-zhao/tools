@@ -9,7 +9,7 @@ import (
 	"errors"
 	"testing"
 
-	"golang.custom.org/x/tools/core/event"
+	"github.com/troll-zhao/tools/core/event"
 )
 
 func TestTrace(t *testing.T) {

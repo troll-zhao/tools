@@ -6,7 +6,7 @@
 package main
 
 import (
-	"golang.custom.org/x/tools/gopls/core/analysis/unusedparams"
+	"github.com/troll-zhao/tools/gopls/core/analysis/unusedparams"
 	"golang.org/x/tools/go/analysis/singlechecker"
 )
 

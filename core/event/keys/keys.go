@@ -10,7 +10,7 @@ import (
 	"math"
 	"strconv"
 
-	"golang.custom.org/x/tools/core/event/label"
+	"github.com/troll-zhao/tools/core/event/label"
 )
 
 // Value represents a key for untyped values.

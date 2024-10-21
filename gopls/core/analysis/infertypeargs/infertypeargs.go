@@ -9,7 +9,7 @@ import (
 	"go/token"
 	"go/types"
 
-	"golang.custom.org/x/tools/core/typeparams"
+	"github.com/troll-zhao/tools/core/typeparams"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/inspect"
 	"golang.org/x/tools/go/ast/inspector"

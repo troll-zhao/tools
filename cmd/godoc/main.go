@@ -39,7 +39,7 @@ import (
 	"runtime"
 	"strings"
 
-	"golang.custom.org/x/tools/core/gocommand"
+	"github.com/troll-zhao/tools/core/gocommand"
 	"golang.org/x/tools/godoc"
 	"golang.org/x/tools/godoc/static"
 	"golang.org/x/tools/godoc/vfs"

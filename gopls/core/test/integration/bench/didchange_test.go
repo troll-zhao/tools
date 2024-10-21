@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	. "golang.custom.org/x/tools/gopls/core/test/integration"
-	"golang.custom.org/x/tools/gopls/core/test/integration/fake"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	. "github.com/troll-zhao/tools/gopls/core/test/integration"
+	"github.com/troll-zhao/tools/gopls/core/test/integration/fake"
 )
 
 // Use a global edit counter as bench function may execute multiple times, and

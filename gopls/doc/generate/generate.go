@@ -36,12 +36,12 @@ import (
 	"time"
 	"unicode"
 
-	"golang.custom.org/x/tools/gopls/core/cache"
-	"golang.custom.org/x/tools/gopls/core/doc"
-	"golang.custom.org/x/tools/gopls/core/golang"
-	"golang.custom.org/x/tools/gopls/core/mod"
-	"golang.custom.org/x/tools/gopls/core/settings"
-	"golang.custom.org/x/tools/gopls/core/util/safetoken"
+	"github.com/troll-zhao/tools/gopls/core/cache"
+	"github.com/troll-zhao/tools/gopls/core/doc"
+	"github.com/troll-zhao/tools/gopls/core/golang"
+	"github.com/troll-zhao/tools/gopls/core/mod"
+	"github.com/troll-zhao/tools/gopls/core/settings"
+	"github.com/troll-zhao/tools/gopls/core/util/safetoken"
 	"golang.org/x/tools/go/ast/astutil"
 	"golang.org/x/tools/go/packages"
 )
@@ -127,7 +127,7 @@ func loadAPI() (*doc.API, error) {
 		&packages.Config{
 			Mode: packages.NeedTypes | packages.NeedTypesInfo | packages.NeedSyntax | packages.NeedDeps,
 		},
-		"golang.custom.org/x/tools/gopls/core/settings",
+		"github.com/troll-zhao/tools/gopls/core/settings",
 	)
 	if err != nil {
 		return nil, err

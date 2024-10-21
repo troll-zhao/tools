@@ -15,9 +15,9 @@ import (
 	"testing"
 	"unicode/utf8"
 
-	"golang.custom.org/x/tools/core/diff"
-	"golang.custom.org/x/tools/core/diff/difftest"
-	"golang.custom.org/x/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/diff"
+	"github.com/troll-zhao/tools/core/diff/difftest"
+	"github.com/troll-zhao/tools/core/testenv"
 )
 
 func TestApply(t *testing.T) {
@@ -162,9 +162,9 @@ func TestToUnified(t *testing.T) {
 }
 
 func TestRegressionOld001(t *testing.T) {
-	a := "// Copyright 2019 The Go Authors. All rights reserved.\n// Use of this source code is governed by a BSD-style\n// license that can be found in the LICENSE file.\n\npackage diff_test\n\nimport (\n\t\"fmt\"\n\t\"math/rand\"\n\t\"strings\"\n\t\"testing\"\n\n\t\"golang.custom.org/x/tools/gopls/core/lsp/diff\"\n\t\"golang.org/x/tools/core/diff/difftest\"\n\t\"golang.custom.org/x/tools/gopls/core/span\"\n)\n"
+	a := "// Copyright 2019 The Go Authors. All rights reserved.\n// Use of this source code is governed by a BSD-style\n// license that can be found in the LICENSE file.\n\npackage diff_test\n\nimport (\n\t\"fmt\"\n\t\"math/rand\"\n\t\"strings\"\n\t\"testing\"\n\n\t\"github.com/troll-zhao/tools/gopls/core/lsp/diff\"\n\t\"golang.org/x/tools/core/diff/difftest\"\n\t\"github.com/troll-zhao/tools/gopls/core/span\"\n)\n"
 
-	b := "// Copyright 2019 The Go Authors. All rights reserved.\n// Use of this source code is governed by a BSD-style\n// license that can be found in the LICENSE file.\n\npackage diff_test\n\nimport (\n\t\"fmt\"\n\t\"math/rand\"\n\t\"strings\"\n\t\"testing\"\n\n\t\"github.com/google/safehtml/template\"\n\t\"golang.custom.org/x/tools/gopls/core/lsp/diff\"\n\t\"golang.org/x/tools/core/diff/difftest\"\n\t\"golang.custom.org/x/tools/gopls/core/span\"\n)\n"
+	b := "// Copyright 2019 The Go Authors. All rights reserved.\n// Use of this source code is governed by a BSD-style\n// license that can be found in the LICENSE file.\n\npackage diff_test\n\nimport (\n\t\"fmt\"\n\t\"math/rand\"\n\t\"strings\"\n\t\"testing\"\n\n\t\"github.com/google/safehtml/template\"\n\t\"github.com/troll-zhao/tools/gopls/core/lsp/diff\"\n\t\"golang.org/x/tools/core/diff/difftest\"\n\t\"github.com/troll-zhao/tools/gopls/core/span\"\n)\n"
 	diffs := diff.Strings(a, b)
 	got, err := diff.Apply(a, diffs)
 	if err != nil {

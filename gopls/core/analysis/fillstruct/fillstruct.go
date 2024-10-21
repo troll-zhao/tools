@@ -22,11 +22,11 @@ import (
 	"strings"
 	"unicode"
 
-	"golang.custom.org/x/tools/core/analysisinternal"
-	"golang.custom.org/x/tools/core/typeparams"
-	"golang.custom.org/x/tools/core/typesinternal"
-	"golang.custom.org/x/tools/gopls/core/fuzzy"
-	"golang.custom.org/x/tools/gopls/core/util/safetoken"
+	"github.com/troll-zhao/tools/core/analysisinternal"
+	"github.com/troll-zhao/tools/core/typeparams"
+	"github.com/troll-zhao/tools/core/typesinternal"
+	"github.com/troll-zhao/tools/gopls/core/fuzzy"
+	"github.com/troll-zhao/tools/gopls/core/util/safetoken"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/ast/astutil"
 )

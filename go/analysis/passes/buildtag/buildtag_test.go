@@ -7,7 +7,7 @@ package buildtag_test
 import (
 	"testing"
 
-	"golang.custom.org/x/tools/core/versions"
+	"github.com/troll-zhao/tools/core/versions"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/analysistest"
 	"golang.org/x/tools/go/analysis/passes/buildtag"

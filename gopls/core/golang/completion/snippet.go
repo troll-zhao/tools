@@ -7,8 +7,8 @@ package completion
 import (
 	"go/ast"
 
-	"golang.custom.org/x/tools/gopls/core/golang/completion/snippet"
-	"golang.custom.org/x/tools/gopls/core/util/safetoken"
+	"github.com/troll-zhao/tools/gopls/core/golang/completion/snippet"
+	"github.com/troll-zhao/tools/gopls/core/util/safetoken"
 )
 
 // structFieldSnippet calculates the snippet for struct literal field names.

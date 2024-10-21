@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"golang.custom.org/x/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
 )
 
 func init() {

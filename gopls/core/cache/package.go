@@ -12,12 +12,12 @@ import (
 	"go/types"
 	"sync"
 
-	"golang.custom.org/x/tools/gopls/core/cache/metadata"
-	"golang.custom.org/x/tools/gopls/core/cache/methodsets"
-	"golang.custom.org/x/tools/gopls/core/cache/parsego"
-	"golang.custom.org/x/tools/gopls/core/cache/testfuncs"
-	"golang.custom.org/x/tools/gopls/core/cache/xrefs"
-	"golang.custom.org/x/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/cache/metadata"
+	"github.com/troll-zhao/tools/gopls/core/cache/methodsets"
+	"github.com/troll-zhao/tools/gopls/core/cache/parsego"
+	"github.com/troll-zhao/tools/gopls/core/cache/testfuncs"
+	"github.com/troll-zhao/tools/gopls/core/cache/xrefs"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
 )
 
 // Convenient aliases for very heavily used types.

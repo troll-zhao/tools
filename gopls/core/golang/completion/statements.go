@@ -11,10 +11,10 @@ import (
 	"go/types"
 	"strings"
 
-	"golang.custom.org/x/tools/gopls/core/cache"
-	"golang.custom.org/x/tools/gopls/core/golang"
-	"golang.custom.org/x/tools/gopls/core/golang/completion/snippet"
-	"golang.custom.org/x/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/cache"
+	"github.com/troll-zhao/tools/gopls/core/golang"
+	"github.com/troll-zhao/tools/gopls/core/golang/completion/snippet"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
 )
 
 // addStatementCandidates adds full statement completion candidates

@@ -20,10 +20,10 @@ import (
 	"testing"
 
 	"github.com/jba/templatecheck"
-	"golang.custom.org/x/tools/core/testenv"
-	"golang.custom.org/x/tools/gopls/core/cache"
-	"golang.custom.org/x/tools/gopls/core/debug"
-	"golang.custom.org/x/tools/gopls/core/file"
+	"github.com/troll-zhao/tools/core/testenv"
+	"github.com/troll-zhao/tools/gopls/core/cache"
+	"github.com/troll-zhao/tools/gopls/core/debug"
+	"github.com/troll-zhao/tools/gopls/core/file"
 	"golang.org/x/tools/go/packages"
 )
 
@@ -62,7 +62,7 @@ func TestTemplates(t *testing.T) {
 		"GOFLAGS=-mod=mod",
 	)
 
-	pkgs, err := packages.Load(cfg, "golang.custom.org/x/tools/gopls/core/debug")
+	pkgs, err := packages.Load(cfg, "github.com/troll-zhao/tools/gopls/core/debug")
 	if err != nil {
 		t.Fatal(err)
 	}

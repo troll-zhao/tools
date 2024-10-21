@@ -7,7 +7,7 @@ package compare_test
 import (
 	"testing"
 
-	"golang.custom.org/x/tools/gopls/core/test/compare"
+	"github.com/troll-zhao/tools/gopls/core/test/compare"
 )
 
 func TestText(t *testing.T) {

@@ -10,11 +10,11 @@ import (
 	"os"
 	"time"
 
-	"golang.custom.org/x/tools/core/event"
-	"golang.custom.org/x/tools/core/event/core"
-	"golang.custom.org/x/tools/core/event/export"
-	"golang.custom.org/x/tools/core/event/keys"
-	"golang.custom.org/x/tools/core/event/label"
+	"github.com/troll-zhao/tools/core/event"
+	"github.com/troll-zhao/tools/core/event/core"
+	"github.com/troll-zhao/tools/core/event/export"
+	"github.com/troll-zhao/tools/core/event/keys"
+	"github.com/troll-zhao/tools/core/event/label"
 )
 
 func ExampleLog() {

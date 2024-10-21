@@ -7,7 +7,7 @@ package modfile
 import (
 	"testing"
 
-	. "golang.custom.org/x/tools/gopls/core/test/integration"
+	. "github.com/troll-zhao/tools/gopls/core/test/integration"
 )
 
 // This test replaces an older, problematic test (golang/go#57784). But it has

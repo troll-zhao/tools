@@ -15,7 +15,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"golang.custom.org/x/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/testenv"
 	"golang.org/x/tools/go/packages"
 )
 

@@ -20,8 +20,8 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"golang.custom.org/x/tools/core/testenv"
-	"golang.custom.org/x/tools/core/testfiles"
+	"github.com/troll-zhao/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/testfiles"
 	"golang.org/x/tools/go/analysis/passes/printf"
 	"golang.org/x/tools/go/analysis/unitchecker"
 	"golang.org/x/tools/go/gcexportdata"

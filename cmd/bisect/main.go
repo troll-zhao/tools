@@ -145,7 +145,7 @@ import (
 	"strings"
 	"time"
 
-	"golang.custom.org/x/tools/core/bisect"
+	"github.com/troll-zhao/tools/core/bisect"
 )
 
 // Preserve import of bisect, to allow [bisect.Match] in the doc comment.

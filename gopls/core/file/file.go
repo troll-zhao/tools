@@ -9,7 +9,7 @@ import (
 	"context"
 	"fmt"
 
-	"golang.custom.org/x/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
 )
 
 // An Identity identifies the name and contents of a file.

@@ -7,7 +7,7 @@ package file
 import (
 	"fmt"
 
-	"golang.custom.org/x/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
 )
 
 // Kind describes the kind of the file in question.

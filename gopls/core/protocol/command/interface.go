@@ -17,8 +17,8 @@ package command
 import (
 	"context"
 
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/vulncheck"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/vulncheck"
 )
 
 // Interface defines the interface gopls exposes for the

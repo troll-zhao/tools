@@ -12,8 +12,8 @@ import (
 	"go/types"
 	"regexp"
 
-	"golang.custom.org/x/tools/core/typesinternal"
-	"golang.custom.org/x/tools/core/versions"
+	"github.com/troll-zhao/tools/core/typesinternal"
+	"github.com/troll-zhao/tools/core/versions"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/inspect"
 	"golang.org/x/tools/go/ast/inspector"

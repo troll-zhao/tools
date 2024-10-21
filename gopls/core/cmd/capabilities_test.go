@@ -11,11 +11,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"golang.custom.org/x/tools/core/testenv"
-	"golang.custom.org/x/tools/gopls/core/cache"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/server"
-	"golang.custom.org/x/tools/gopls/core/settings"
+	"github.com/troll-zhao/tools/core/testenv"
+	"github.com/troll-zhao/tools/gopls/core/cache"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/server"
+	"github.com/troll-zhao/tools/gopls/core/settings"
 )
 
 // TestCapabilities does some minimal validation of the server's adherence to the LSP.

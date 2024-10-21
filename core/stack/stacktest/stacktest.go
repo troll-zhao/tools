@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"golang.custom.org/x/tools/core/stack"
+	"github.com/troll-zhao/tools/core/stack"
 )
 
 // this is only needed to support pre 1.14 when testing.TB did not have Cleanup

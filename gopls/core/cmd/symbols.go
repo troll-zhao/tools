@@ -11,8 +11,8 @@ import (
 	"fmt"
 	"sort"
 
-	"golang.custom.org/x/tools/core/tool"
-	"golang.custom.org/x/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/core/tool"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
 )
 
 // symbols implements the symbols verb for gopls

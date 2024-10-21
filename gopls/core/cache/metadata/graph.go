@@ -7,8 +7,8 @@ package metadata
 import (
 	"sort"
 
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/util/bug"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/util/bug"
 	"golang.org/x/tools/go/packages"
 )
 

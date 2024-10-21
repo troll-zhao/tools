@@ -11,9 +11,9 @@ import (
 	"sync"
 	"testing"
 
-	"golang.custom.org/x/tools/core/jsonrpc2/servertest"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/test/integration/fake"
+	"github.com/troll-zhao/tools/core/jsonrpc2/servertest"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/test/integration/fake"
 )
 
 // Env holds the building blocks of an editor testing environment, providing

@@ -19,8 +19,8 @@ import (
 	"strconv"
 	"strings"
 
-	internalastutil "golang.custom.org/x/tools/core/astutil"
-	"golang.custom.org/x/tools/core/typeparams"
+	internalastutil "github.com/troll-zhao/tools/core/astutil"
+	"github.com/troll-zhao/tools/core/typeparams"
 	"golang.org/x/tools/go/ast/astutil"
 	"golang.org/x/tools/go/types/typeutil"
 	"golang.org/x/tools/imports"

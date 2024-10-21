@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"golang.custom.org/x/tools/core/pprof"
+	"github.com/troll-zhao/tools/core/pprof"
 )
 
 func TestTotalTime(t *testing.T) {

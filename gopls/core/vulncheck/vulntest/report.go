@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"golang.custom.org/x/tools/gopls/core/vulncheck/osv"
+	"github.com/troll-zhao/tools/gopls/core/vulncheck/osv"
 	"golang.org/x/mod/semver"
 	"gopkg.in/yaml.v3"
 )

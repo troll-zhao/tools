@@ -21,8 +21,8 @@ import (
 	"strings"
 	"testing"
 
-	"golang.custom.org/x/tools/core/testenv"
-	"golang.custom.org/x/tools/gopls/core/filecache"
+	"github.com/troll-zhao/tools/core/testenv"
+	"github.com/troll-zhao/tools/gopls/core/filecache"
 	"golang.org/x/sync/errgroup"
 )
 

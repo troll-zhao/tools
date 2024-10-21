@@ -20,17 +20,17 @@ import (
 	"testing"
 	"time"
 
-	"golang.custom.org/x/tools/core/event"
-	"golang.custom.org/x/tools/core/fakenet"
-	"golang.custom.org/x/tools/core/jsonrpc2"
-	"golang.custom.org/x/tools/core/jsonrpc2/servertest"
-	"golang.custom.org/x/tools/core/pprof"
-	"golang.custom.org/x/tools/core/tool"
-	"golang.custom.org/x/tools/gopls/core/cmd"
-	"golang.custom.org/x/tools/gopls/core/protocol/command"
-	"golang.custom.org/x/tools/gopls/core/test/integration"
-	"golang.custom.org/x/tools/gopls/core/test/integration/fake"
-	"golang.custom.org/x/tools/gopls/core/util/bug"
+	"github.com/troll-zhao/tools/core/event"
+	"github.com/troll-zhao/tools/core/fakenet"
+	"github.com/troll-zhao/tools/core/jsonrpc2"
+	"github.com/troll-zhao/tools/core/jsonrpc2/servertest"
+	"github.com/troll-zhao/tools/core/pprof"
+	"github.com/troll-zhao/tools/core/tool"
+	"github.com/troll-zhao/tools/gopls/core/cmd"
+	"github.com/troll-zhao/tools/gopls/core/protocol/command"
+	"github.com/troll-zhao/tools/gopls/core/test/integration"
+	"github.com/troll-zhao/tools/gopls/core/test/integration/fake"
+	"github.com/troll-zhao/tools/gopls/core/util/bug"
 )
 
 var (

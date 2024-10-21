@@ -7,7 +7,7 @@ package completion
 import (
 	"testing"
 
-	. "golang.custom.org/x/tools/gopls/core/test/integration"
+	. "github.com/troll-zhao/tools/gopls/core/test/integration"
 )
 
 func TestPackageCompletionCrash_Issue68169(t *testing.T) {

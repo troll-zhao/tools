@@ -7,7 +7,7 @@ package lru_test
 import (
 	"testing"
 
-	"golang.custom.org/x/tools/gopls/core/util/lru"
+	"github.com/troll-zhao/tools/gopls/core/util/lru"
 )
 
 // Simple fuzzing test for consistency.

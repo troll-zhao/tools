@@ -75,10 +75,10 @@ on each Package record. So, this template shows dead functions grouped
 by package:
 
 	$ deadcode -f='{{println .Path}}{{range .Funcs}}{{printf "\t%s\n" .Name}}{{end}}{{println}}' -test ./gopls/...
-	golang.custom.org/x/tools/gopls/core/lsp
+	github.com/troll-zhao/tools/gopls/core/lsp
 		openClientEditor
 
-	golang.custom.org/x/tools/gopls/core/template
+	github.com/troll-zhao/tools/gopls/core/template
 		Parsed.WriteNode
 		wrNode.writeNode
 

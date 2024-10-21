@@ -7,7 +7,7 @@ package unusedvariable_test
 import (
 	"testing"
 
-	"golang.custom.org/x/tools/gopls/core/analysis/unusedvariable"
+	"github.com/troll-zhao/tools/gopls/core/analysis/unusedvariable"
 	"golang.org/x/tools/go/analysis/analysistest"
 )
 

@@ -22,14 +22,14 @@ import (
 	"strings"
 	"sync"
 
-	"golang.custom.org/x/tools/core/event"
-	"golang.custom.org/x/tools/gopls/core/cache"
-	"golang.custom.org/x/tools/gopls/core/cache/metadata"
-	"golang.custom.org/x/tools/gopls/core/golang"
-	"golang.custom.org/x/tools/gopls/core/progress"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/settings"
-	"golang.custom.org/x/tools/gopls/core/util/bug"
+	"github.com/troll-zhao/tools/core/event"
+	"github.com/troll-zhao/tools/gopls/core/cache"
+	"github.com/troll-zhao/tools/gopls/core/cache/metadata"
+	"github.com/troll-zhao/tools/gopls/core/golang"
+	"github.com/troll-zhao/tools/gopls/core/progress"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/settings"
+	"github.com/troll-zhao/tools/gopls/core/util/bug"
 )
 
 // New creates an LSP server and binds it to handle incoming client

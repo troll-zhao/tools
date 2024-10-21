@@ -10,11 +10,11 @@ import (
 	"sync"
 	"time"
 
-	"golang.custom.org/x/tools/core/event"
-	"golang.custom.org/x/tools/core/event/keys"
-	"golang.custom.org/x/tools/core/imports"
-	"golang.custom.org/x/tools/gopls/core/file"
-	"golang.custom.org/x/tools/gopls/core/label"
+	"github.com/troll-zhao/tools/core/event"
+	"github.com/troll-zhao/tools/core/event/keys"
+	"github.com/troll-zhao/tools/core/imports"
+	"github.com/troll-zhao/tools/gopls/core/file"
+	"github.com/troll-zhao/tools/gopls/core/label"
 )
 
 // refreshTimer implements delayed asynchronous refreshing of state.

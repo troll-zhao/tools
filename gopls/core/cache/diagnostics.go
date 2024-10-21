@@ -9,9 +9,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"golang.custom.org/x/tools/gopls/core/file"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/util/bug"
+	"github.com/troll-zhao/tools/gopls/core/file"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/util/bug"
 )
 
 // A InitializationError is an error that causes snapshot initialization to fail.

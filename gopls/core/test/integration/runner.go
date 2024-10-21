@@ -20,16 +20,16 @@ import (
 	"testing"
 	"time"
 
-	"golang.custom.org/x/tools/core/jsonrpc2"
-	"golang.custom.org/x/tools/core/jsonrpc2/servertest"
-	"golang.custom.org/x/tools/core/memoize"
-	"golang.custom.org/x/tools/core/testenv"
-	"golang.custom.org/x/tools/core/xcontext"
-	"golang.custom.org/x/tools/gopls/core/cache"
-	"golang.custom.org/x/tools/gopls/core/debug"
-	"golang.custom.org/x/tools/gopls/core/lsprpc"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/test/integration/fake"
+	"github.com/troll-zhao/tools/core/jsonrpc2"
+	"github.com/troll-zhao/tools/core/jsonrpc2/servertest"
+	"github.com/troll-zhao/tools/core/memoize"
+	"github.com/troll-zhao/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/xcontext"
+	"github.com/troll-zhao/tools/gopls/core/cache"
+	"github.com/troll-zhao/tools/gopls/core/debug"
+	"github.com/troll-zhao/tools/gopls/core/lsprpc"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/test/integration/fake"
 )
 
 // Mode is a bitmask that defines for which execution modes a test should run.

@@ -9,9 +9,9 @@ import (
 	"fmt"
 	"regexp"
 
-	"golang.custom.org/x/tools/gopls/core/cache"
-	"golang.custom.org/x/tools/gopls/core/file"
-	"golang.custom.org/x/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/cache"
+	"github.com/troll-zhao/tools/gopls/core/file"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
 )
 
 func Highlight(ctx context.Context, snapshot *cache.Snapshot, fh file.Handle, loc protocol.Position) ([]protocol.DocumentHighlight, error) {

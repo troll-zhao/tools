@@ -9,7 +9,7 @@ import (
 	"go/types"
 	"reflect"
 
-	"golang.custom.org/x/tools/core/typesinternal"
+	"github.com/troll-zhao/tools/core/typesinternal"
 )
 
 func (d *differ) checkCompatible(otn *types.TypeName, old, new types.Type) {

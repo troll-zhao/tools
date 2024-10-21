@@ -17,12 +17,12 @@ import (
 	"sort"
 	"strings"
 
-	"golang.custom.org/x/tools/core/typesinternal"
-	"golang.custom.org/x/tools/gopls/core/cache"
-	"golang.custom.org/x/tools/gopls/core/cache/metadata"
-	"golang.custom.org/x/tools/gopls/core/cache/parsego"
-	"golang.custom.org/x/tools/gopls/core/util/moremaps"
-	"golang.custom.org/x/tools/gopls/core/util/safetoken"
+	"github.com/troll-zhao/tools/core/typesinternal"
+	"github.com/troll-zhao/tools/gopls/core/cache"
+	"github.com/troll-zhao/tools/gopls/core/cache/metadata"
+	"github.com/troll-zhao/tools/gopls/core/cache/parsego"
+	"github.com/troll-zhao/tools/gopls/core/util/moremaps"
+	"github.com/troll-zhao/tools/gopls/core/util/safetoken"
 	"golang.org/x/tools/go/ast/astutil"
 )
 

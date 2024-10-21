@@ -20,7 +20,7 @@ import (
 	"os"
 	"sort"
 
-	"golang.custom.org/x/tools/core/gcimporter"
+	"github.com/troll-zhao/tools/core/gcimporter"
 	"golang.org/x/tools/go/gcexportdata"
 	"golang.org/x/tools/go/packages"
 	"golang.org/x/tools/go/types/typeutil"

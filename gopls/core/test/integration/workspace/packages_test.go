@@ -10,9 +10,9 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/protocol/command"
-	. "golang.custom.org/x/tools/gopls/core/test/integration"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/protocol/command"
+	. "github.com/troll-zhao/tools/gopls/core/test/integration"
 )
 
 func TestPackages(t *testing.T) {

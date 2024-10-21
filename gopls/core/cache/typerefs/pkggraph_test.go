@@ -16,10 +16,10 @@ import (
 	"runtime"
 	"sync"
 
-	"golang.custom.org/x/tools/gopls/core/cache/metadata"
-	"golang.custom.org/x/tools/gopls/core/cache/parsego"
-	"golang.custom.org/x/tools/gopls/core/cache/typerefs"
-	"golang.custom.org/x/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/cache/metadata"
+	"github.com/troll-zhao/tools/gopls/core/cache/parsego"
+	"github.com/troll-zhao/tools/gopls/core/cache/typerefs"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
 	"golang.org/x/sync/errgroup"
 )
 

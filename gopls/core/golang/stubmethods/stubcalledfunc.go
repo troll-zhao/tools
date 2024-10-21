@@ -13,8 +13,8 @@ import (
 	"strings"
 	"unicode"
 
-	"golang.custom.org/x/tools/core/typesinternal"
-	"golang.custom.org/x/tools/gopls/core/util/typesutil"
+	"github.com/troll-zhao/tools/core/typesinternal"
+	"github.com/troll-zhao/tools/gopls/core/util/typesutil"
 )
 
 var anyType = types.Universe.Lookup("any").Type()

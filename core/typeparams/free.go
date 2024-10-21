@@ -7,7 +7,7 @@ package typeparams
 import (
 	"go/types"
 
-	"golang.custom.org/x/tools/core/aliases"
+	"github.com/troll-zhao/tools/core/aliases"
 )
 
 // Free is a memoization of the set of free type parameters within a

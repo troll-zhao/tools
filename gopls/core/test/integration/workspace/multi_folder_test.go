@@ -7,7 +7,7 @@ package workspace
 import (
 	"testing"
 
-	. "golang.custom.org/x/tools/gopls/core/test/integration"
+	. "github.com/troll-zhao/tools/gopls/core/test/integration"
 )
 
 // TODO(rfindley): update the marker tests to support the concept of multiple

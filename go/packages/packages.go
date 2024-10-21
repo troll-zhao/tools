@@ -27,9 +27,9 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"golang.custom.org/x/tools/core/gocommand"
-	"golang.custom.org/x/tools/core/packagesinternal"
-	"golang.custom.org/x/tools/core/typesinternal"
+	"github.com/troll-zhao/tools/core/gocommand"
+	"github.com/troll-zhao/tools/core/packagesinternal"
+	"github.com/troll-zhao/tools/core/typesinternal"
 	"golang.org/x/tools/go/gcexportdata"
 )
 

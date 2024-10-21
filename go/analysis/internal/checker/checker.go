@@ -27,9 +27,9 @@ import (
 	"sync"
 	"time"
 
-	"golang.custom.org/x/tools/core/analysisinternal"
-	"golang.custom.org/x/tools/core/diff"
-	"golang.custom.org/x/tools/core/robustio"
+	"github.com/troll-zhao/tools/core/analysisinternal"
+	"github.com/troll-zhao/tools/core/diff"
+	"github.com/troll-zhao/tools/core/robustio"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/internal/analysisflags"
 	"golang.org/x/tools/go/packages"

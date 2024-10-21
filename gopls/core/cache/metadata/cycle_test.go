@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"golang.custom.org/x/tools/gopls/core/util/bug"
+	"github.com/troll-zhao/tools/gopls/core/util/bug"
 )
 
 func init() {

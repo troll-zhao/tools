@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	. "golang.custom.org/x/tools/gopls/core/test/integration"
+	. "github.com/troll-zhao/tools/gopls/core/test/integration"
 )
 
 // TODO(rfindley): move workspace tests related to metadata bugs into this

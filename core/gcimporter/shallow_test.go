@@ -14,8 +14,8 @@ import (
 	"strings"
 	"testing"
 
-	"golang.custom.org/x/tools/core/gcimporter"
-	"golang.custom.org/x/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/gcimporter"
+	"github.com/troll-zhao/tools/core/testenv"
 	"golang.org/x/sync/errgroup"
 	"golang.org/x/tools/go/packages"
 )

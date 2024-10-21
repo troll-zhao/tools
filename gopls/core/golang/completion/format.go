@@ -13,14 +13,14 @@ import (
 	"go/types"
 	"strings"
 
-	"golang.custom.org/x/tools/core/event"
-	"golang.custom.org/x/tools/core/imports"
-	"golang.custom.org/x/tools/core/typesinternal"
-	"golang.custom.org/x/tools/gopls/core/golang"
-	"golang.custom.org/x/tools/gopls/core/golang/completion/snippet"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/util/safetoken"
-	"golang.custom.org/x/tools/gopls/core/util/typesutil"
+	"github.com/troll-zhao/tools/core/event"
+	"github.com/troll-zhao/tools/core/imports"
+	"github.com/troll-zhao/tools/core/typesinternal"
+	"github.com/troll-zhao/tools/gopls/core/golang"
+	"github.com/troll-zhao/tools/gopls/core/golang/completion/snippet"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/util/safetoken"
+	"github.com/troll-zhao/tools/gopls/core/util/typesutil"
 )
 
 var (

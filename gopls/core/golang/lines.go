@@ -17,7 +17,7 @@ import (
 	"sort"
 	"strings"
 
-	"golang.custom.org/x/tools/gopls/core/util/safetoken"
+	"github.com/troll-zhao/tools/gopls/core/util/safetoken"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/ast/astutil"
 )

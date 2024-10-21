@@ -13,7 +13,7 @@ import (
 	"testing"
 	"unsafe"
 
-	"golang.custom.org/x/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/testenv"
 	"golang.org/x/tools/go/gcexportdata"
 	"golang.org/x/tools/go/packages"
 )

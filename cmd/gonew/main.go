@@ -48,7 +48,7 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.custom.org/x/tools/core/edit"
+	"github.com/troll-zhao/tools/core/edit"
 	"golang.org/x/mod/modfile"
 	"golang.org/x/mod/module"
 )

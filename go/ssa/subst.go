@@ -7,7 +7,7 @@ package ssa
 import (
 	"go/types"
 
-	"golang.custom.org/x/tools/core/aliases"
+	"github.com/troll-zhao/tools/core/aliases"
 	"golang.org/x/tools/go/types/typeutil"
 )
 

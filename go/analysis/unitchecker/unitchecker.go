@@ -47,8 +47,8 @@ import (
 	"sync"
 	"time"
 
-	"golang.custom.org/x/tools/core/analysisinternal"
-	"golang.custom.org/x/tools/core/facts"
+	"github.com/troll-zhao/tools/core/analysisinternal"
+	"github.com/troll-zhao/tools/core/facts"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/internal/analysisflags"
 )

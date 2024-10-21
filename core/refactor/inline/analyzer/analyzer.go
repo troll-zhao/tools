@@ -12,8 +12,8 @@ import (
 	"os"
 	"strings"
 
-	"golang.custom.org/x/tools/core/diff"
-	"golang.custom.org/x/tools/core/refactor/inline"
+	"github.com/troll-zhao/tools/core/diff"
+	"github.com/troll-zhao/tools/core/refactor/inline"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/inspect"
 	"golang.org/x/tools/go/ast/inspector"
@@ -25,7 +25,7 @@ const Doc = `inline calls to functions with "inlineme" doc comment`
 var Analyzer = &analysis.Analyzer{
 	Name:      "inline",
 	Doc:       Doc,
-	URL:       "https://pkg.go.dev/golang.custom.org/x/tools/core/refactor/inline/analyzer",
+	URL:       "https://pkg.go.dev/github.com/troll-zhao/tools/core/refactor/inline/analyzer",
 	Run:       run,
 	FactTypes: []analysis.Fact{new(inlineMeFact)},
 	Requires:  []*analysis.Analyzer{inspect.Analyzer},

@@ -7,7 +7,7 @@ package useany_test
 import (
 	"testing"
 
-	"golang.custom.org/x/tools/gopls/core/analysis/useany"
+	"github.com/troll-zhao/tools/gopls/core/analysis/useany"
 	"golang.org/x/tools/go/analysis/analysistest"
 )
 

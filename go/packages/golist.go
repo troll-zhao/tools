@@ -21,8 +21,8 @@ import (
 	"sync"
 	"unicode"
 
-	"golang.custom.org/x/tools/core/gocommand"
-	"golang.custom.org/x/tools/core/packagesinternal"
+	"github.com/troll-zhao/tools/core/gocommand"
+	"github.com/troll-zhao/tools/core/packagesinternal"
 )
 
 // debug controls verbose logging.

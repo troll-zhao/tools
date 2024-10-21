@@ -4,7 +4,7 @@
 
 package file
 
-import "golang.custom.org/x/tools/gopls/core/protocol"
+import "github.com/troll-zhao/tools/gopls/core/protocol"
 
 // Modification represents a modification to a file.
 type Modification struct {

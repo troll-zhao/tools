@@ -7,9 +7,9 @@ package event
 import (
 	"context"
 
-	"golang.custom.org/x/tools/core/event/core"
-	"golang.custom.org/x/tools/core/event/keys"
-	"golang.custom.org/x/tools/core/event/label"
+	"github.com/troll-zhao/tools/core/event/core"
+	"github.com/troll-zhao/tools/core/event/keys"
+	"github.com/troll-zhao/tools/core/event/label"
 )
 
 // Exporter is a function that handles events.

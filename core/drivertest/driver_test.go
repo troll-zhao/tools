@@ -12,12 +12,12 @@ import (
 	"path/filepath"
 	"testing"
 
-	"golang.custom.org/x/tools/core/diff"
-	"golang.custom.org/x/tools/core/diff/myers"
-	"golang.custom.org/x/tools/core/drivertest"
-	"golang.custom.org/x/tools/core/packagesinternal"
-	"golang.custom.org/x/tools/core/testenv"
-	"golang.custom.org/x/tools/core/testfiles"
+	"github.com/troll-zhao/tools/core/diff"
+	"github.com/troll-zhao/tools/core/diff/myers"
+	"github.com/troll-zhao/tools/core/drivertest"
+	"github.com/troll-zhao/tools/core/packagesinternal"
+	"github.com/troll-zhao/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/testfiles"
 	"golang.org/x/tools/go/packages"
 	"golang.org/x/tools/txtar"
 )

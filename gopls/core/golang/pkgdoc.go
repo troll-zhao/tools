@@ -44,14 +44,14 @@ import (
 	"slices"
 	"strings"
 
-	"golang.custom.org/x/tools/core/stdlib"
-	"golang.custom.org/x/tools/core/typesinternal"
-	"golang.custom.org/x/tools/gopls/core/cache"
-	"golang.custom.org/x/tools/gopls/core/cache/parsego"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	goplsastutil "golang.custom.org/x/tools/gopls/core/util/astutil"
-	"golang.custom.org/x/tools/gopls/core/util/bug"
-	"golang.custom.org/x/tools/gopls/core/util/safetoken"
+	"github.com/troll-zhao/tools/core/stdlib"
+	"github.com/troll-zhao/tools/core/typesinternal"
+	"github.com/troll-zhao/tools/gopls/core/cache"
+	"github.com/troll-zhao/tools/gopls/core/cache/parsego"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	goplsastutil "github.com/troll-zhao/tools/gopls/core/util/astutil"
+	"github.com/troll-zhao/tools/gopls/core/util/bug"
+	"github.com/troll-zhao/tools/gopls/core/util/safetoken"
 	"golang.org/x/tools/go/ast/astutil"
 )
 

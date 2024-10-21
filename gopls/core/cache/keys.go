@@ -9,7 +9,7 @@ package cache
 import (
 	"io"
 
-	"golang.custom.org/x/tools/core/event/label"
+	"github.com/troll-zhao/tools/core/event/label"
 )
 
 var (

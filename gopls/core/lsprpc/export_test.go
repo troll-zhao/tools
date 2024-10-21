@@ -11,10 +11,10 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"golang.custom.org/x/tools/core/event"
-	jsonrpc2_v2 "golang.custom.org/x/tools/core/jsonrpc2_v2"
-	"golang.custom.org/x/tools/core/xcontext"
-	"golang.custom.org/x/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/core/event"
+	jsonrpc2_v2 "github.com/troll-zhao/tools/core/jsonrpc2_v2"
+	"github.com/troll-zhao/tools/core/xcontext"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
 )
 
 const HandshakeMethod = handshakeMethod

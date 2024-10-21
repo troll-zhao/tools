@@ -13,7 +13,7 @@ import (
 	"reflect"
 	"testing"
 
-	"golang.custom.org/x/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/testenv"
 )
 
 func TestIssue69298(t *testing.T) {

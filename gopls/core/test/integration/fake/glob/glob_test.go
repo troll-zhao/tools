@@ -7,7 +7,7 @@ package glob_test
 import (
 	"testing"
 
-	"golang.custom.org/x/tools/gopls/core/test/integration/fake/glob"
+	"github.com/troll-zhao/tools/gopls/core/test/integration/fake/glob"
 )
 
 func TestParseErrors(t *testing.T) {

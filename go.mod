@@ -1,4 +1,4 @@
-module golang.custom.org/x/tools
+module github.com/troll-zhao/tools
 
 go 1.22.0 // => default GODEBUG has gotypesalias=0
 

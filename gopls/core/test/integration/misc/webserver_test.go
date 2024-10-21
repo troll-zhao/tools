@@ -14,11 +14,11 @@ import (
 	"strings"
 	"testing"
 
-	"golang.custom.org/x/tools/core/testenv"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/protocol/command"
-	"golang.custom.org/x/tools/gopls/core/settings"
-	. "golang.custom.org/x/tools/gopls/core/test/integration"
+	"github.com/troll-zhao/tools/core/testenv"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/protocol/command"
+	"github.com/troll-zhao/tools/gopls/core/settings"
+	. "github.com/troll-zhao/tools/gopls/core/test/integration"
 )
 
 // TestWebServer exercises the web server created on demand

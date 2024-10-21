@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"golang.custom.org/x/tools/gopls/core/file"
-	"golang.custom.org/x/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/file"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
 	"golang.org/x/mod/modfile"
 )
 

@@ -10,9 +10,9 @@ import (
 	"fmt"
 	"strings"
 
-	"golang.custom.org/x/tools/core/tool"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/settings"
+	"github.com/troll-zhao/tools/core/tool"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/settings"
 )
 
 // workspaceSymbol implements the workspace_symbol verb for gopls.

@@ -10,7 +10,7 @@ import (
 	"sort"
 	"testing"
 
-	"golang.custom.org/x/tools/core/testfiles"
+	"github.com/troll-zhao/tools/core/testfiles"
 	"golang.org/x/tools/go/callgraph"
 	"golang.org/x/tools/go/callgraph/static"
 	"golang.org/x/tools/go/ssa"

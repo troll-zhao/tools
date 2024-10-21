@@ -7,7 +7,7 @@ package nonewvars_test
 import (
 	"testing"
 
-	"golang.custom.org/x/tools/gopls/core/analysis/nonewvars"
+	"github.com/troll-zhao/tools/gopls/core/analysis/nonewvars"
 	"golang.org/x/tools/go/analysis/analysistest"
 )
 

@@ -10,9 +10,9 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	. "golang.custom.org/x/tools/gopls/core/test/integration"
-	"golang.custom.org/x/tools/gopls/core/test/integration/fake"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	. "github.com/troll-zhao/tools/gopls/core/test/integration"
+	"github.com/troll-zhao/tools/gopls/core/test/integration/fake"
 )
 
 var completionGOPATH = flag.String("completion_gopath", "", "if set, use this GOPATH for BenchmarkCompletion")

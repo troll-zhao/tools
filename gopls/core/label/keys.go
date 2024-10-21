@@ -6,7 +6,7 @@
 // and events.
 package label
 
-import "golang.custom.org/x/tools/core/event/keys"
+import "github.com/troll-zhao/tools/core/event/keys"
 
 var (
 	File      = keys.NewString("file", "")

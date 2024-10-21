@@ -16,11 +16,11 @@ import (
 	"testing"
 	"time"
 
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/protocol/command"
-	"golang.custom.org/x/tools/gopls/core/telemetry"
-	. "golang.custom.org/x/tools/gopls/core/test/integration"
-	"golang.custom.org/x/tools/gopls/core/util/bug"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/protocol/command"
+	"github.com/troll-zhao/tools/gopls/core/telemetry"
+	. "github.com/troll-zhao/tools/gopls/core/test/integration"
+	"github.com/troll-zhao/tools/gopls/core/util/bug"
 	"golang.org/x/telemetry/counter"
 	"golang.org/x/telemetry/counter/countertest" // requires go1.21+
 )
@@ -82,10 +82,10 @@ func TestTelemetry(t *testing.T) {
 		// This will increment a counter named something like:
 		//
 		// `gopls/bug
-		// golang.custom.org/x/tools/gopls/core/util/bug.report:+35
-		// golang.custom.org/x/tools/gopls/core/util/bug.Report:=68
-		// golang.custom.org/x/tools/gopls/core/telemetry_test.TestTelemetry.func2:+4
-		// golang.custom.org/x/tools/gopls/core/test/integration.(*Runner).Run.func1:+87
+		// github.com/troll-zhao/tools/gopls/core/util/bug.report:+35
+		// github.com/troll-zhao/tools/gopls/core/util/bug.Report:=68
+		// github.com/troll-zhao/tools/gopls/core/telemetry_test.TestTelemetry.func2:+4
+		// github.com/troll-zhao/tools/gopls/core/test/integration.(*Runner).Run.func1:+87
 		// testing.tRunner:+150
 		// runtime.goexit:+0`
 		//

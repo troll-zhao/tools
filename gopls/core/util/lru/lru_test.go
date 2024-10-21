@@ -13,7 +13,7 @@ import (
 	"strings"
 	"testing"
 
-	"golang.custom.org/x/tools/gopls/core/util/lru"
+	"github.com/troll-zhao/tools/gopls/core/util/lru"
 	"golang.org/x/sync/errgroup"
 )
 

@@ -51,8 +51,8 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.custom.org/x/tools/gopls/core/util/frob"
-	"golang.custom.org/x/tools/gopls/core/util/safetoken"
+	"github.com/troll-zhao/tools/gopls/core/util/frob"
+	"github.com/troll-zhao/tools/gopls/core/util/safetoken"
 	"golang.org/x/tools/go/types/objectpath"
 )
 

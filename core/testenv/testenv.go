@@ -20,7 +20,7 @@ import (
 	"testing"
 	"time"
 
-	"golang.custom.org/x/tools/core/goroot"
+	"github.com/troll-zhao/tools/core/goroot"
 	"golang.org/x/mod/modfile"
 )
 

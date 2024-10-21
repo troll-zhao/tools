@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"golang.custom.org/x/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/testenv"
 	"golang.org/x/tools/go/packages"
 	"golang.org/x/tools/go/ssa/ssautil"
 )

@@ -5,7 +5,7 @@
 package settings
 
 import (
-	"golang.custom.org/x/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
 	"honnef.co/go/tools/analysis/lint"
 	"honnef.co/go/tools/quickfix"
 	"honnef.co/go/tools/simple"

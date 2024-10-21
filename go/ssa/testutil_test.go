@@ -15,8 +15,8 @@ import (
 	"testing"
 	"testing/fstest"
 
-	"golang.custom.org/x/tools/core/testenv"
-	"golang.custom.org/x/tools/core/testfiles"
+	"github.com/troll-zhao/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/testfiles"
 	"golang.org/x/tools/go/packages"
 	"golang.org/x/tools/go/ssa"
 	"golang.org/x/tools/go/ssa/ssautil"

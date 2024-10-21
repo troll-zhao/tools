@@ -11,7 +11,7 @@ import (
 	"regexp"
 	"strings"
 
-	"golang.custom.org/x/tools/core/typesinternal"
+	"github.com/troll-zhao/tools/core/typesinternal"
 	"golang.org/x/mod/semver"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/inspect"

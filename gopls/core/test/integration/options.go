@@ -8,9 +8,9 @@ import (
 	"strings"
 	"testing"
 
-	"golang.custom.org/x/tools/core/drivertest"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/test/integration/fake"
+	"github.com/troll-zhao/tools/core/drivertest"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/test/integration/fake"
 )
 
 type runConfig struct {

@@ -8,7 +8,7 @@ import (
 	"go/token"
 	"testing"
 
-	"golang.custom.org/x/tools/gopls/core/analysis/fillswitch"
+	"github.com/troll-zhao/tools/gopls/core/analysis/fillswitch"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/analysistest"
 )

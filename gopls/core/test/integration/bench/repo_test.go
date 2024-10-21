@@ -17,8 +17,8 @@ import (
 	"testing"
 	"time"
 
-	. "golang.custom.org/x/tools/gopls/core/test/integration"
-	"golang.custom.org/x/tools/gopls/core/test/integration/fake"
+	. "github.com/troll-zhao/tools/gopls/core/test/integration"
+	"github.com/troll-zhao/tools/gopls/core/test/integration/fake"
 )
 
 // repos holds shared repositories for use in benchmarks.

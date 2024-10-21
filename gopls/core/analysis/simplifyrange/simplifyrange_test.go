@@ -9,7 +9,7 @@ import (
 	"slices"
 	"testing"
 
-	"golang.custom.org/x/tools/gopls/core/analysis/simplifyrange"
+	"github.com/troll-zhao/tools/gopls/core/analysis/simplifyrange"
 	"golang.org/x/tools/go/analysis/analysistest"
 )
 

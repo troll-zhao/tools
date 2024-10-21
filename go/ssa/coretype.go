@@ -7,7 +7,7 @@ package ssa
 import (
 	"go/types"
 
-	"golang.custom.org/x/tools/core/typeparams"
+	"github.com/troll-zhao/tools/core/typeparams"
 )
 
 // Utilities for dealing with core types.

@@ -16,13 +16,13 @@ import (
 	"sort"
 	"strings"
 
-	"golang.custom.org/x/tools/core/tool"
-	"golang.custom.org/x/tools/gopls/core/debug"
-	"golang.custom.org/x/tools/gopls/core/doc"
-	"golang.custom.org/x/tools/gopls/core/filecache"
-	licensespkg "golang.custom.org/x/tools/gopls/core/licenses"
-	"golang.custom.org/x/tools/gopls/core/util/browser"
-	goplsbug "golang.custom.org/x/tools/gopls/core/util/bug"
+	"github.com/troll-zhao/tools/core/tool"
+	"github.com/troll-zhao/tools/gopls/core/debug"
+	"github.com/troll-zhao/tools/gopls/core/doc"
+	"github.com/troll-zhao/tools/gopls/core/filecache"
+	licensespkg "github.com/troll-zhao/tools/gopls/core/licenses"
+	"github.com/troll-zhao/tools/gopls/core/util/browser"
+	goplsbug "github.com/troll-zhao/tools/gopls/core/util/bug"
 )
 
 // help implements the help command.
@@ -223,7 +223,7 @@ func (j *apiJSON) DetailedHelp(f *flag.FlagSet) {
 	fmt.Fprint(f.Output(), `
 The api-json command prints a JSON value that describes
 and documents all gopls' public interfaces.
-Its schema is defined by golang.custom.org/x/tools/gopls/core/doc.API.
+Its schema is defined by github.com/troll-zhao/tools/gopls/core/doc.API.
 `)
 	printFlagDefaults(f)
 }

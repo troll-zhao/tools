@@ -10,8 +10,8 @@ import (
 	"context"
 	"fmt"
 
-	"golang.custom.org/x/tools/core/jsonrpc2"
-	"golang.custom.org/x/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/core/jsonrpc2"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
 )
 
 func (s *server) ColorPresentation(context.Context, *protocol.ColorPresentationParams) ([]protocol.ColorPresentation, error) {

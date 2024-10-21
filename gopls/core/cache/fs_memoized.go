@@ -10,11 +10,11 @@ import (
 	"sync"
 	"time"
 
-	"golang.custom.org/x/tools/core/event"
-	"golang.custom.org/x/tools/core/robustio"
-	"golang.custom.org/x/tools/gopls/core/file"
-	"golang.custom.org/x/tools/gopls/core/label"
-	"golang.custom.org/x/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/core/event"
+	"github.com/troll-zhao/tools/core/robustio"
+	"github.com/troll-zhao/tools/gopls/core/file"
+	"github.com/troll-zhao/tools/gopls/core/label"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
 )
 
 // A memoizedFS is a file source that memoizes reads, to reduce IO.

@@ -7,7 +7,7 @@ package misc
 import (
 	"testing"
 
-	. "golang.custom.org/x/tools/gopls/core/test/integration"
+	. "github.com/troll-zhao/tools/gopls/core/test/integration"
 )
 
 func TestEmptyDirectoryFilters_Issue51843(t *testing.T) {

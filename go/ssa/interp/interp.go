@@ -54,7 +54,7 @@ import (
 	"sync/atomic"
 	_ "unsafe"
 
-	"golang.custom.org/x/tools/core/typeparams"
+	"github.com/troll-zhao/tools/core/typeparams"
 	"golang.org/x/tools/go/ssa"
 )
 

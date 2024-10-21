@@ -15,9 +15,9 @@ import (
 	"context"
 	"os"
 
-	"golang.custom.org/x/tools/core/tool"
-	"golang.custom.org/x/tools/gopls/core/cmd"
-	versionpkg "golang.custom.org/x/tools/gopls/core/version"
+	"github.com/troll-zhao/tools/core/tool"
+	"github.com/troll-zhao/tools/gopls/core/cmd"
+	versionpkg "github.com/troll-zhao/tools/gopls/core/version"
 	"golang.org/x/telemetry"
 )
 

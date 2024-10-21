@@ -19,8 +19,8 @@ import (
 	"sync"
 	"time"
 
-	"golang.custom.org/x/tools/core/robustio"
-	"golang.custom.org/x/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/core/robustio"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
 )
 
 // RelativeTo is a helper for operations relative to a given directory.

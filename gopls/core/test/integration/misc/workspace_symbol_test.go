@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"golang.custom.org/x/tools/gopls/core/settings"
-	. "golang.custom.org/x/tools/gopls/core/test/integration"
+	"github.com/troll-zhao/tools/gopls/core/settings"
+	. "github.com/troll-zhao/tools/gopls/core/test/integration"
 )
 
 func TestWorkspaceSymbolMissingMetadata(t *testing.T) {

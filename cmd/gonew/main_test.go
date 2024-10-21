@@ -16,8 +16,8 @@ import (
 	"strings"
 	"testing"
 
-	"golang.custom.org/x/tools/core/diffp"
-	"golang.custom.org/x/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/diffp"
+	"github.com/troll-zhao/tools/core/testenv"
 	"golang.org/x/tools/txtar"
 )
 

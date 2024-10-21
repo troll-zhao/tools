@@ -20,8 +20,8 @@ import (
 	"strings"
 	"testing"
 
-	"golang.custom.org/x/tools/core/gcimporter"
-	"golang.custom.org/x/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/gcimporter"
+	"github.com/troll-zhao/tools/core/testenv"
 )
 
 // TODO(rfindley): migrate this to testdata, as has been done in the standard library.

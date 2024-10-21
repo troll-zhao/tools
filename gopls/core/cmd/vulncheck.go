@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"os"
 
-	"golang.custom.org/x/tools/gopls/core/vulncheck/scan"
+	"github.com/troll-zhao/tools/gopls/core/vulncheck/scan"
 )
 
 // vulncheck implements the vulncheck command.
@@ -30,7 +30,7 @@ func (v *vulncheck) DetailedHelp(f *flag.FlagSet) {
 	WARNING: this command is for core-use only.
 
 	By default, the command outputs a JSON-encoded
-	golang.custom.org/x/tools/gopls/core/protocol/command.VulncheckResult
+	github.com/troll-zhao/tools/gopls/core/protocol/command.VulncheckResult
 	message.
 	Example:
 	$ gopls vulncheck <packages>

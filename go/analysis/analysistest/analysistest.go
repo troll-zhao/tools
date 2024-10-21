@@ -22,8 +22,8 @@ import (
 	"testing"
 	"text/scanner"
 
-	"golang.custom.org/x/tools/core/diff"
-	"golang.custom.org/x/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/diff"
+	"github.com/troll-zhao/tools/core/testenv"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/internal/checker"
 	"golang.org/x/tools/go/packages"

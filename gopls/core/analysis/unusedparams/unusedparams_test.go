@@ -7,7 +7,7 @@ package unusedparams_test
 import (
 	"testing"
 
-	"golang.custom.org/x/tools/gopls/core/analysis/unusedparams"
+	"github.com/troll-zhao/tools/gopls/core/analysis/unusedparams"
 	"golang.org/x/tools/go/analysis/analysistest"
 )
 

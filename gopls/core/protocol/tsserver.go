@@ -13,7 +13,7 @@ package protocol
 import (
 	"context"
 
-	"golang.custom.org/x/tools/core/jsonrpc2"
+	"github.com/troll-zhao/tools/core/jsonrpc2"
 )
 
 type Server interface {

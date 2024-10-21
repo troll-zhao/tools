@@ -22,9 +22,9 @@ import (
 	"testing"
 	"unsafe"
 
-	"golang.custom.org/x/tools/core/diff"
-	"golang.custom.org/x/tools/core/refactor/inline"
-	"golang.custom.org/x/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/diff"
+	"github.com/troll-zhao/tools/core/refactor/inline"
+	"github.com/troll-zhao/tools/core/testenv"
 	"golang.org/x/tools/go/ast/astutil"
 	"golang.org/x/tools/go/expect"
 	"golang.org/x/tools/go/packages"

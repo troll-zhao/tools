@@ -5,8 +5,8 @@
 package fake
 
 import (
-	"golang.custom.org/x/tools/core/diff"
-	"golang.custom.org/x/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/core/diff"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
 )
 
 // NewEdit creates an edit replacing all content between the 0-based

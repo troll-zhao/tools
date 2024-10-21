@@ -10,8 +10,8 @@ import (
 	"go/scanner"
 	"go/token"
 
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/util/safetoken"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/util/safetoken"
 )
 
 // A File contains the results of parsing a Go file.

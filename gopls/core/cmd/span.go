@@ -13,7 +13,7 @@ import (
 	"sort"
 	"strings"
 
-	"golang.custom.org/x/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
 )
 
 // A span represents a range of text within a source file.  The start

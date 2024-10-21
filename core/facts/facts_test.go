@@ -16,8 +16,8 @@ import (
 	"strings"
 	"testing"
 
-	"golang.custom.org/x/tools/core/facts"
-	"golang.custom.org/x/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/facts"
+	"github.com/troll-zhao/tools/core/testenv"
 	"golang.org/x/tools/go/analysis/analysistest"
 	"golang.org/x/tools/go/packages"
 )

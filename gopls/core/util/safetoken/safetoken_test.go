@@ -12,8 +12,8 @@ import (
 	"os"
 	"testing"
 
-	"golang.custom.org/x/tools/core/testenv"
-	"golang.custom.org/x/tools/gopls/core/util/safetoken"
+	"github.com/troll-zhao/tools/core/testenv"
+	"github.com/troll-zhao/tools/gopls/core/util/safetoken"
 	"golang.org/x/tools/go/packages"
 )
 
@@ -116,7 +116,7 @@ func TestGoplsSourceDoesNotCallTokenFileMethods(t *testing.T) {
 
 	for _, pkg := range pkgs {
 		switch pkg.PkgPath {
-		case "go/token", "golang.custom.org/x/tools/gopls/core/util/safetoken":
+		case "go/token", "github.com/troll-zhao/tools/gopls/core/util/safetoken":
 			continue // allow calls within these packages
 		}
 

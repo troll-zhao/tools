@@ -16,7 +16,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"golang.custom.org/x/tools/core/analysisinternal"
+	"github.com/troll-zhao/tools/core/analysisinternal"
 	"golang.org/x/tools/go/analysis"
 )
 

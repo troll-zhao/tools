@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"slices"
 
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/settings"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/settings"
 )
 
 // check implements the check verb for gopls.

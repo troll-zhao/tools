@@ -13,7 +13,7 @@ import (
 	"os"
 	"time"
 
-	"golang.custom.org/x/tools/core/event"
+	"github.com/troll-zhao/tools/core/event"
 )
 
 // NOTE: This file provides an experimental API for serving multiple remote

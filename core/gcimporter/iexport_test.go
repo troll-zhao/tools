@@ -20,8 +20,8 @@ import (
 	"strings"
 	"testing"
 
-	"golang.custom.org/x/tools/core/gcimporter"
-	"golang.custom.org/x/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/gcimporter"
+	"github.com/troll-zhao/tools/core/testenv"
 	"golang.org/x/tools/go/gcexportdata"
 	"golang.org/x/tools/go/packages"
 )

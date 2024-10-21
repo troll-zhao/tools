@@ -27,10 +27,10 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"golang.custom.org/x/tools/core/event"
-	"golang.custom.org/x/tools/core/gocommand"
-	"golang.custom.org/x/tools/core/gopathwalk"
-	"golang.custom.org/x/tools/core/stdlib"
+	"github.com/troll-zhao/tools/core/event"
+	"github.com/troll-zhao/tools/core/gocommand"
+	"github.com/troll-zhao/tools/core/gopathwalk"
+	"github.com/troll-zhao/tools/core/stdlib"
 	"golang.org/x/sync/errgroup"
 	"golang.org/x/tools/go/ast/astutil"
 )

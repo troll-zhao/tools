@@ -13,11 +13,11 @@ import (
 	"sync"
 	"time"
 
-	"golang.custom.org/x/tools/core/event"
-	"golang.custom.org/x/tools/core/imports"
-	"golang.custom.org/x/tools/gopls/core/cache"
-	"golang.custom.org/x/tools/gopls/core/cache/metadata"
-	"golang.custom.org/x/tools/gopls/core/file"
+	"github.com/troll-zhao/tools/core/event"
+	"github.com/troll-zhao/tools/core/imports"
+	"github.com/troll-zhao/tools/gopls/core/cache"
+	"github.com/troll-zhao/tools/gopls/core/cache/metadata"
+	"github.com/troll-zhao/tools/gopls/core/file"
 )
 
 // KnownPackagePaths returns a new list of package paths of all known

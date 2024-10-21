@@ -12,8 +12,8 @@ import (
 	"strings"
 	"sync"
 
-	"golang.custom.org/x/tools/core/gopathwalk"
-	"golang.custom.org/x/tools/core/stdlib"
+	"github.com/troll-zhao/tools/core/gopathwalk"
+	"github.com/troll-zhao/tools/core/stdlib"
 	"golang.org/x/mod/module"
 )
 

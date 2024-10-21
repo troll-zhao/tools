@@ -22,7 +22,7 @@ import (
 	"strings"
 	"testing"
 
-	"golang.custom.org/x/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/testenv"
 	"golang.org/x/sync/errgroup"
 	"golang.org/x/tools/go/analysis/analysistest"
 	"golang.org/x/tools/go/expect"

@@ -10,9 +10,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"golang.custom.org/x/tools/core/testenv"
-	"golang.custom.org/x/tools/core/testfiles"
-	"golang.custom.org/x/tools/core/versions"
+	"github.com/troll-zhao/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/testfiles"
+	"github.com/troll-zhao/tools/core/versions"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/analysistest"
 	"golang.org/x/tools/txtar"

@@ -18,14 +18,14 @@ import (
 	"strings"
 	"sync"
 
-	"golang.custom.org/x/tools/core/jsonrpc2"
-	"golang.custom.org/x/tools/core/jsonrpc2/servertest"
-	"golang.custom.org/x/tools/core/xcontext"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/protocol/command"
-	"golang.custom.org/x/tools/gopls/core/test/integration/fake/glob"
-	"golang.custom.org/x/tools/gopls/core/util/bug"
-	"golang.custom.org/x/tools/gopls/core/util/pathutil"
+	"github.com/troll-zhao/tools/core/jsonrpc2"
+	"github.com/troll-zhao/tools/core/jsonrpc2/servertest"
+	"github.com/troll-zhao/tools/core/xcontext"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/protocol/command"
+	"github.com/troll-zhao/tools/gopls/core/test/integration/fake/glob"
+	"github.com/troll-zhao/tools/gopls/core/util/bug"
+	"github.com/troll-zhao/tools/gopls/core/util/pathutil"
 )
 
 // Editor is a fake client editor.  It keeps track of client state and can be

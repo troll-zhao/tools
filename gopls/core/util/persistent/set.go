@@ -4,7 +4,7 @@
 
 package persistent
 
-import "golang.custom.org/x/tools/gopls/core/util/constraints"
+import "github.com/troll-zhao/tools/gopls/core/util/constraints"
 
 // Set is a collection of elements of type K.
 //

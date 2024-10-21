@@ -9,10 +9,10 @@ import (
 	"os"
 	"path"
 
-	"golang.custom.org/x/tools/core/xcontext"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/protocol/command"
-	"golang.custom.org/x/tools/gopls/core/test/integration/fake"
+	"github.com/troll-zhao/tools/core/xcontext"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/protocol/command"
+	"github.com/troll-zhao/tools/gopls/core/test/integration/fake"
 )
 
 // RemoveWorkspaceFile deletes a file on disk but does nothing in the

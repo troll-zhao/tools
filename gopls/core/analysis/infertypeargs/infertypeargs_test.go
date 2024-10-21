@@ -7,7 +7,7 @@ package infertypeargs_test
 import (
 	"testing"
 
-	"golang.custom.org/x/tools/gopls/core/analysis/infertypeargs"
+	"github.com/troll-zhao/tools/gopls/core/analysis/infertypeargs"
 	"golang.org/x/tools/go/analysis/analysistest"
 )
 

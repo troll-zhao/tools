@@ -13,7 +13,7 @@ import (
 	"go/token"
 	"testing"
 
-	"golang.custom.org/x/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/testenv"
 	"golang.org/x/tools/go/cfg"
 	"golang.org/x/tools/go/packages"
 )

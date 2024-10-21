@@ -12,9 +12,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"golang.custom.org/x/tools/core/gocommand"
-	"golang.custom.org/x/tools/core/robustio"
-	"golang.custom.org/x/tools/core/testenv"
+	"github.com/troll-zhao/tools/core/gocommand"
+	"github.com/troll-zhao/tools/core/robustio"
+	"github.com/troll-zhao/tools/core/testenv"
 	"golang.org/x/tools/txtar"
 )
 

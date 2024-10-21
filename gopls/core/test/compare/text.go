@@ -7,7 +7,7 @@ package compare
 import (
 	"bytes"
 
-	"golang.custom.org/x/tools/core/diff"
+	"github.com/troll-zhao/tools/core/diff"
 )
 
 // Text returns a formatted unified diff of the edits to go from want to

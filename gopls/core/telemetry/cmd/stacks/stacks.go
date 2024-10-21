@@ -82,8 +82,8 @@ import (
 	"time"
 	"unicode"
 
-	"golang.custom.org/x/tools/gopls/core/util/browser"
-	"golang.custom.org/x/tools/gopls/core/util/moremaps"
+	"github.com/troll-zhao/tools/gopls/core/util/browser"
+	"github.com/troll-zhao/tools/gopls/core/util/moremaps"
 	"golang.org/x/sys/unix"
 	"golang.org/x/telemetry"
 )
@@ -509,7 +509,7 @@ func newIssue(stack, id string, jsonURL string, counts map[Info]int64) string {
 #!stacks
 "<insert predicate here>"
 ` + "```\n")
-	fmt.Fprintf(body, "Issue created by [stacks](https://pkg.go.dev/golang.custom.org/x/tools/gopls/core/telemetry/cmd/stacks).\n\n")
+	fmt.Fprintf(body, "Issue created by [stacks](https://pkg.go.dev/github.com/troll-zhao/tools/gopls/core/telemetry/cmd/stacks).\n\n")
 
 	writeStackComment(body, stack, id, jsonURL, counts)
 

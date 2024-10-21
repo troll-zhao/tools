@@ -13,8 +13,8 @@ import (
 	"go/token"
 	"go/types"
 
-	"golang.custom.org/x/tools/core/typeparams"
-	"golang.custom.org/x/tools/core/versions"
+	"github.com/troll-zhao/tools/core/typeparams"
+	"github.com/troll-zhao/tools/core/versions"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/inspect"
 	"golang.org/x/tools/go/analysis/passes/internal/analysisutil"

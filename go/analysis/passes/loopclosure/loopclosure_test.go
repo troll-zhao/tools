@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"golang.custom.org/x/tools/core/testfiles"
+	"github.com/troll-zhao/tools/core/testfiles"
 	"golang.org/x/tools/go/analysis/analysistest"
 	"golang.org/x/tools/go/analysis/passes/loopclosure"
 )

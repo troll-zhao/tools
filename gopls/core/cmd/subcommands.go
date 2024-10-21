@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"text/tabwriter"
 
-	"golang.custom.org/x/tools/core/tool"
+	"github.com/troll-zhao/tools/core/tool"
 )
 
 // subcommands is a helper that may be embedded for commands that delegate to

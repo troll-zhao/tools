@@ -12,8 +12,8 @@ import (
 	"go/token"
 	"go/types"
 
-	"golang.custom.org/x/tools/core/typeparams"
-	"golang.custom.org/x/tools/core/typesinternal"
+	"github.com/troll-zhao/tools/core/typeparams"
+	"github.com/troll-zhao/tools/core/typesinternal"
 	"golang.org/x/tools/go/loader"
 	"golang.org/x/tools/refactor/satisfy"
 )

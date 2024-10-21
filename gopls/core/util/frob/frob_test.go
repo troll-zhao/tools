@@ -9,7 +9,7 @@ import (
 	"reflect"
 	"testing"
 
-	"golang.custom.org/x/tools/gopls/core/util/frob"
+	"github.com/troll-zhao/tools/gopls/core/util/frob"
 )
 
 func TestBasics(t *testing.T) {

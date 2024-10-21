@@ -5,8 +5,8 @@
 package metric
 
 import (
-	"golang.custom.org/x/tools/core/event/keys"
-	"golang.custom.org/x/tools/core/event/label"
+	"github.com/troll-zhao/tools/core/event/keys"
+	"github.com/troll-zhao/tools/core/event/label"
 )
 
 // Scalar represents the construction information for a scalar metric.

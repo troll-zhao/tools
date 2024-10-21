@@ -9,11 +9,11 @@ import (
 	"go/token"
 	"go/types"
 
-	"golang.custom.org/x/tools/core/diff"
-	"golang.custom.org/x/tools/core/typeparams"
-	"golang.custom.org/x/tools/gopls/core/golang"
-	"golang.custom.org/x/tools/gopls/core/protocol"
-	"golang.custom.org/x/tools/gopls/core/util/safetoken"
+	"github.com/troll-zhao/tools/core/diff"
+	"github.com/troll-zhao/tools/core/typeparams"
+	"github.com/troll-zhao/tools/gopls/core/golang"
+	"github.com/troll-zhao/tools/gopls/core/protocol"
+	"github.com/troll-zhao/tools/gopls/core/util/safetoken"
 	"golang.org/x/tools/go/types/typeutil"
 )
 

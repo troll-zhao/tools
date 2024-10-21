@@ -24,7 +24,7 @@ import (
 	"strings"
 	"text/template"
 
-	"golang.custom.org/x/tools/core/typesinternal"
+	"github.com/troll-zhao/tools/core/typesinternal"
 	"golang.org/x/telemetry"
 	"golang.org/x/tools/go/callgraph"
 	"golang.org/x/tools/go/callgraph/rta"

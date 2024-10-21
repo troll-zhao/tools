@@ -5,9 +5,9 @@
 package debug
 
 import (
-	"golang.custom.org/x/tools/core/event/export/metric"
-	"golang.custom.org/x/tools/core/event/label"
-	"golang.custom.org/x/tools/core/jsonrpc2"
+	"github.com/troll-zhao/tools/core/event/export/metric"
+	"github.com/troll-zhao/tools/core/event/label"
+	"github.com/troll-zhao/tools/core/jsonrpc2"
 )
 
 var (

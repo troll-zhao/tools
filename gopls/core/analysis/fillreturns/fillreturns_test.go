@@ -7,7 +7,7 @@ package fillreturns_test
 import (
 	"testing"
 
-	"golang.custom.org/x/tools/gopls/core/analysis/fillreturns"
+	"github.com/troll-zhao/tools/gopls/core/analysis/fillreturns"
 	"golang.org/x/tools/go/analysis/analysistest"
 )
 

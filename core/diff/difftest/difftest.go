@@ -17,7 +17,7 @@ package difftest
 import (
 	"testing"
 
-	"golang.custom.org/x/tools/core/diff"
+	"github.com/troll-zhao/tools/core/diff"
 )
 
 const (

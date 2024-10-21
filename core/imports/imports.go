@@ -21,7 +21,7 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.custom.org/x/tools/core/event"
+	"github.com/troll-zhao/tools/core/event"
 	"golang.org/x/tools/go/ast/astutil"
 )
 

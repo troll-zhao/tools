@@ -23,7 +23,7 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.custom.org/x/tools/core/typesinternal"
+	"github.com/troll-zhao/tools/core/typesinternal"
 	"golang.org/x/tools/go/buildutil"
 	"golang.org/x/tools/go/loader"
 )
